@@ -1499,6 +1499,10 @@ menu bar
 .art-menu-bar.art-active .art-current-page {
   opacity: 0;
 }
+/* neon custom style */
+.art-lang-skills-item > h6{
+  font-size: 8px;
+}
 
 /* ------------------------------
 
