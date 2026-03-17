@@ -1,0 +1,30 @@
+[
+    {
+        "id": "pub_ai_ethics_1",
+        "title": "Philosophy in AI",
+        "topic": "AI Ethics",
+        "pdfPath": "/data/ai_ethics/Philoshopy_in_ai.pdf",
+        "coverPath": "/data/ai_ethics/philosophy_cover.png"
+    },
+    {
+        "id": "pub_ai_ethics_2",
+        "title": "Bias in AI",
+        "topic": "AI Ethics",
+        "pdfPath": "/data/ai_ethics/bais_in_ai.pdf",
+        "coverPath": "/data/ai_ethics/bias_cover.png"
+    },
+    {
+        "id": "pub_multimodal_foundation",
+        "title": "Multimodal Foundation Models",
+        "topic": "Core AI",
+        "pdfPath": "/data/AI agent/Mulimodal_foundation_models.pdf",
+        "coverPath": "/data/AI agent/card.png"
+    },
+    {
+        "id": "pub_vlm",
+        "title": "Project Abstract: VLM on Edge Devices",
+        "topic": "Edge Computing",
+        "pdfPath": "/data/vlm_on_edge_devices/Project Abstract_Nitish_Devrani-1.pdf",
+        "coverPath": "/data/vlm_on_edge_devices/card.png"
+    }
+]

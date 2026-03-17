@@ -1,0 +1,229 @@
+[
+    {
+        "id": "ai_agent",
+        "title": "Multimodal AI Agent",
+        "skill": "AI / ML",
+        "language": "Python",
+        "objective": "Build a foundation model capable of understanding text and image inputs simultaneously.",
+        "description": "Developed an LLM-powered autonomous agent that navigates MiniGrid environments using GPT as a decision backbone. The agent maintains a persistent memory map of explored cells, uses a custom prompt-engineering pipeline to convert 7×7 grid observations into text descriptions, and employs heuristic shortcuts (initial scanning, stuck detection, key-drop sequences) to solve multi-room puzzles requiring door unlocking, object manipulation, and spatial reasoning. The system tracks API usage and supports configurable LLM backends.",
+        "imagePath": "/data/AI agent/card.png",
+        "type": "project",
+        "category": "ai",
+        "papers": [
+            "/data/AI agent/Mulimodal_foundation_models.pdf"
+        ]
+    },
+    {
+        "id": "smart_bike_light",
+        "title": "Smart Bike Light Pro",
+        "skill": "Hardware / IoT",
+        "language": "C++ / Hardware C",
+        "objective": "Design an intelligent bike light system responding to environment lighting and motion.",
+        "description": "Engineered a smart bicycle tail light that automatically adjusts brightness based on ambient light conditions and rider motion. The project includes custom 3D-printed enclosures (case caps, cycle holders, mounting nuts) designed in Onshape CAD, assembled with real-world testing on a bicycle. A detailed poster and technical report document the electronics design, sensor integration, power management, and iterative prototyping process.",
+        "imagePath": "/data/smart-bike-light-project/card.png",
+        "type": "project",
+        "category": "ai",
+        "papers": [
+            "/data/smart-bike-light-project/Poster- Smart Bike Light.pdf",
+            "/data/smart-bike-light-project/smart_bike_lights_report.pdf"
+        ],
+        "models": [
+            "Cap - Cap.stl",
+            "Cap - Case.stl",
+            "Cycle-holder-bottom.stl",
+            "Cycle-holder-top.stl",
+            "Nut-Final.stl",
+            "Part Studio 1 - Botttom-Base-Sample.stl",
+            "Part Studio 1 - Botttom-Top-Sample.stl",
+            "Part Studio 1 - Botttom.stl",
+            "Part Studio 1.stl"
+        ],
+        "modelsBasePath": "/data/smart-bike-light-project/3d-models"
+    },
+    {
+        "id": "vlm_on_edge",
+        "title": "VLM on Edge Devices",
+        "skill": "Computer Vision",
+        "language": "Python / PyTorch",
+        "objective": "Optimize Vision-Language Models to run efficiently on resource-constrained edge hardware.",
+        "description": "Researching ultra-low-bit quantization (2-bit and 4-bit) techniques for deploying Vision-Language Models like CLIP ViT-B/32 on edge devices. Starting from a baseline of 151.3M parameters at 577 MB FP32 with 86.16% zero-shot accuracy on CIFAR-10, the project explores PTQ, QAT, GPTQ/AWQ, and data-free quantization methods. A comprehensive literature review covers 7 key papers including SPEED-Q, D4C, VLMQ, ParetoQ, and TesseraQ, with a roadmap progressing from CLIP to Qwen-VL and LLaVA deployment.",
+        "imagePath": "/data/vlm_on_edge_devices/card.png",
+        "type": "project",
+        "category": "ai",
+        "papers": [
+            "/data/vlm_on_edge_devices/Project Abstract_Nitish_Devrani-1.pdf"
+        ]
+    },
+    {
+        "id": "cloud_economics",
+        "title": "Cloud Economics",
+        "skill": "Cloud Architecture",
+        "language": "System Design",
+        "objective": "Analyze and optimize cloud expenditure through automated infrastructure scaling.",
+        "description": "Investigated the economics of cloud computing — comparing on-premises vs. cloud deployment costs, analyzing pricing models (pay-as-you-go, reserved instances, spot pricing), and evaluating strategies for right-sizing infrastructure. The project includes a detailed report and presentation covering cost optimization frameworks, automated scaling policies, and real-world case studies of cloud migration ROI.",
+        "imagePath": "/images/projects/cloud-economics/cover.png",
+        "type": "project",
+        "category": "web_development",
+        "galleryImages": [
+            "/images/projects/cloud-economics/shopping-agent-ui.png",
+            "/images/projects/cloud-economics/ai-assistant-ui.png"
+        ],
+        "papers": [
+            "/data/cloud_economics/Nitish_Report.pdf",
+            "/data/cloud_economics/Cloud_Economics_PPT.pdf"
+        ]
+    },
+    {
+        "id": "german_university_learning_review",
+        "title": "German University Learning Review WebApp",
+        "skill": "Web Development",
+        "language": "React / Node.js",
+        "objective": "Architect and deliver an end-to-end learning review platform across frontend, backend, database, and cloud deployment.",
+        "description": "Owned complete architecture and development of the learning review web app, including frontend, backend, database design, cloud deployment, production maintenance, and feature expansion for new stakeholder demands.",
+        "imagePath": "/images/projects/german-university-learning-review/cover.png",
+        "type": "project",
+        "category": "web_development",
+        "galleryImages": [
+            "/images/projects/german-university-learning-review/cover.png"
+        ],
+        "url": "http://138.246.235.231:5000/",
+        "techStack": [
+            "React",
+            "MongoDB",
+            "JavaScript",
+            "Node.js",
+            "Express"
+        ],
+        "tasks": [
+            "Architected the complete web application structure end-to-end.",
+            "Developed frontend, backend, database, and cloud deployment pipeline.",
+            "Maintained production and delivered new features based on evolving requirements."
+        ],
+        "papers": []
+    },
+    {
+        "id": "petco_website",
+        "title": "Petco Website",
+        "skill": "E-Commerce",
+        "language": "Next.js / TypeScript",
+        "objective": "Build and optimize high-traffic e-commerce experiences across PDP, PLP, brand pages, and homepage modules.",
+        "description": "Contributed to building, upgrading, and maintaining core customer-facing shopping experiences for Petco, focusing on Product Detail Pages, Product Listing Pages, Brand Pages, and Homepage delivery with SEO improvements.",
+        "imagePath": "/images/projects/petco-website/cover.png",
+        "type": "project",
+        "category": "web_development",
+        "galleryImages": [
+            "/images/projects/petco-website/cover.png"
+        ],
+        "url": "https://www.petco.com/shop/en/petcostore",
+        "techStack": [
+            "Next.js",
+            "TypeScript"
+        ],
+        "tasks": [
+            "Created and upgraded PDP, PLP, Brand Pages, and Homepage modules.",
+            "Maintained production storefront components in a large e-commerce environment.",
+            "Improved discoverability and performance through SEO enhancements."
+        ],
+        "papers": []
+    },
+    {
+        "id": "adani_sampling",
+        "title": "Adani Sampling (Adani One)",
+        "skill": "Web Platform",
+        "language": "React.js",
+        "objective": "Deliver merchant-facing sampling workflows inside the Adani One ecosystem with responsive and accessible UX.",
+        "description": "Built the frontend experience used by merchants to review sampled products on Adani One. Delivered responsive and accessible React components, integrated REST APIs, and improved usability through Progressive Web App patterns.",
+        "imagePath": "/images/projects/adani-sampling/cover.png",
+        "type": "project",
+        "category": "web_development",
+        "galleryImages": [
+            "/images/projects/adani-sampling/cover.png"
+        ],
+        "url": "https://www.adanione.com/",
+        "techStack": [
+            "React.js",
+            "REST APIs",
+            "PWA"
+        ],
+        "tasks": [
+            "Created merchant-facing frontend for reviewing sampled products.",
+            "Developed responsive and accessible UI components with React.js.",
+            "Integrated REST APIs for seamless application communication.",
+            "Enhanced user experience by implementing Progressive Web App capabilities."
+        ],
+        "deprecated": true,
+        "papers": []
+    },
+    {
+        "id": "babyflix_app",
+        "title": "Babyflix App",
+        "skill": "Media Streaming",
+        "language": "PHP / Drupal / React",
+        "objective": "Scale live-streaming features and improve platform architecture for a high-traffic pregnancy-tech product.",
+        "description": "Managed and developed live-streaming capabilities to support smooth experiences at scale, while leading architectural improvements and collaborating closely with the client to continuously ship enhancements.",
+        "imagePath": "/images/projects/babyflix-app/cover.png",
+        "type": "project",
+        "category": "web_development",
+        "galleryImages": [
+            "/images/projects/babyflix-app/cover.png"
+        ],
+        "url": "https://babyflix.ai/",
+        "techStack": [
+            "PHP",
+            "Drupal",
+            "React.js",
+            "MySQL",
+            "JavaScript",
+            "AWS"
+        ],
+        "tasks": [
+            "Managed and developed live-streaming features for large concurrent usage.",
+            "Led architectural improvements for platform scalability and maintainability.",
+            "Worked directly with stakeholders to plan and deliver continuous product enhancements."
+        ],
+        "papers": []
+    },
+    {
+        "id": "stream_data_pipeline_dashboard",
+        "title": "Stream Data pipeline Dashboard",
+        "skill": "Real-Time Analytics",
+        "language": "Next.js / Kafka / WebSockets",
+        "objective": "Build a real-time dashboard that streams and visualizes Kafka topic data using WebSocket updates.",
+        "description": "Developed a real-time streaming dashboard that connects Kafka-processed data to a Next.js frontend over WebSockets. The system provides live query metrics, user-specific insights, and alerting-oriented visualization for continuous monitoring.",
+        "imagePath": "/images/projects/stream-pipeline/cover.png",
+        "type": "project",
+        "category": "web_development",
+        "galleryImages": [
+            "/images/projects/stream-pipeline/cover.png",
+            "/images/projects/stream-pipeline/409227633-d6527962-92c5-4d77-ba61-5ff738102517.png",
+            "/images/projects/stream-pipeline/409227684-406352af-ba26-4105-8b51-edb53c82f49a.png",
+            "/images/projects/stream-pipeline/409227745-d4b523da-839b-473f-aa39-351e1aadf1ce.png"
+        ],
+        "url": "https://github.com/Nitishdevrani/Realtime_DataPipeline_Dashboard",
+        "techStack": [
+            "Next.js",
+            "Kafka",
+            "WebSockets",
+            "Node.js",
+            "Docker"
+        ],
+        "tasks": [
+            "Built the real-time frontend dashboard for streaming data visualization.",
+            "Integrated Kafka-backed data flow with WebSocket-based live updates.",
+            "Implemented monitoring features including query insights and alert-centric metrics."
+        ],
+        "papers": []
+    },
+    {
+        "id": "3d_models",
+        "title": "3D Modeling & Printing",
+        "skill": "3D Design",
+        "language": "CAD",
+        "objective": "Designing complex mechanical parts and aesthetic models for 3D printing.",
+        "description": "A collection of CAD-designed parts created for FDM 3D printing. The models range from practical household items (brush holders, wiper fixes, hinges, screws) to fun recreational objects (frisbee, toy dryer). Each design was modeled in Onshape, exported as STL, optimized for print orientation and support structures, and manufactured on a consumer 3D printer.",
+        "imagePath": "/data/3d_models/cover.png",
+        "type": "3d_model",
+        "category": "3d_designing",
+        "papers": []
+    }
+]
