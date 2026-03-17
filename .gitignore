@@ -28,3 +28,4 @@ server/.env
 
 # Generated from scripts/sync-public-data.mjs
 public/data/
+.vite
