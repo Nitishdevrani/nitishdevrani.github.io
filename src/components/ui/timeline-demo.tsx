@@ -24,7 +24,7 @@ export function TimelineDemo({ onSelectProject }: TimelineDemoProps) {
               />
               <h4 className="text-white text-lg font-semibold group-hover:text-cyan-300 transition-colors">UTN (Technische Universitat Nurnberg)</h4>
             </a>
-            <p className="text-neutral-300 text-sm mt-1">Role - Hiwi</p>
+            <p className="text-neutral-300 text-sm mt-1">Hiwi</p>
           </div>
           <ul className="list-disc pl-5 text-neutral-300 text-sm md:text-base space-y-2 mb-4">
             <li>Working as a Hiwi on university initiatives and research-support activities.</li>
@@ -38,7 +38,7 @@ export function TimelineDemo({ onSelectProject }: TimelineDemoProps) {
               className="w-full max-w-2xl aspect-video overflow-hidden rounded-lg border border-white/10 bg-neutral-900/50 cursor-pointer"
             >
               <img
-                src="/images/projects/german-university-learning-review/cover2.png"
+                src="/images/projects/german-university-learning-review/cover.png"
                 alt="German University project"
                 className="h-full w-full object-cover"
               />
@@ -66,7 +66,7 @@ export function TimelineDemo({ onSelectProject }: TimelineDemoProps) {
               />
               <h4 className="text-white text-lg font-semibold group-hover:text-cyan-300 transition-colors">Petco</h4>
             </a>
-            <p className="text-neutral-300 text-sm mt-1">Role - Frontend Developer</p>
+            <p className="text-neutral-300 text-sm mt-1">Frontend Developer</p>
           </div>
           <ul className="list-disc pl-5 text-neutral-300 text-sm md:text-base space-y-2 mb-4">
             <li>Created, upgraded, and maintained PDP, PLP, brand pages, and homepage experiences.</li>
@@ -108,7 +108,7 @@ export function TimelineDemo({ onSelectProject }: TimelineDemoProps) {
               />
               <h4 className="text-white text-lg font-semibold group-hover:text-cyan-300 transition-colors">Kellton</h4>
             </a>
-            <p className="text-neutral-300 text-sm mt-1">Role - Software Engineer</p>
+            <p className="text-neutral-300 text-sm mt-1">Software Engineer</p>
           </div>
           <ul className="list-disc pl-5 text-neutral-300 text-sm md:text-base space-y-2 mb-4">
             <li>Developed responsive UI components with React.js.</li>
@@ -150,7 +150,7 @@ export function TimelineDemo({ onSelectProject }: TimelineDemoProps) {
               />
               <h4 className="text-white text-lg font-semibold group-hover:text-cyan-300 transition-colors">Oodles Technologies</h4>
             </a>
-            <p className="text-neutral-300 text-sm mt-1">Role - Sr. Associate Consultant</p>
+            <p className="text-neutral-300 text-sm mt-1">Sr. Associate Consultant</p>
           </div>
           <ul className="list-disc pl-5 text-neutral-300 text-sm md:text-base space-y-2 mb-4">
             <li>Led a 5-person team on live-streaming projects.</li>

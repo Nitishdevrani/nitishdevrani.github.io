@@ -1,54 +1,61 @@
-export const ContactSection = () => {
+import React, { useState } from 'react';
+
+const API_URL = import.meta.env.PROD
+    ? '/api/contact'
+    : 'http://localhost:3001/api/contact';
+
+interface FormData {
+    name: string;
+    email: string;
+    message: string;
+}
+
+export const ContactSection: React.FC = () => {
+    const [form, setForm] = useState<FormData>({ name: '', email: '', message: '' });
+    const [status, setStatus] = useState<'idle' | 'sending' | 'success' | 'error'>('idle');
+    const [errorMsg, setErrorMsg] = useState('');
+
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+        setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
+    };
+
+    const handleSubmit = async (e: React.FormEvent) => {
+        e.preventDefault();
+        setStatus('sending');
+        setErrorMsg('');
+
+        try {
+            const res = await fetch(API_URL, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(form),
+            });
+
+            const data = await res.json();
+
+            if (!res.ok) {
+                throw new Error(data.error || 'Something went wrong');
+            }
+
+            setStatus('success');
+            setForm({ name: '', email: '', message: '' });
+
+            // Auto-hide success message after 5s
+            setTimeout(() => setStatus('idle'), 5000);
+        } catch (err: any) {
+            setStatus('error');
+            setErrorMsg(err.message || 'Failed to send message. Please try again.');
+        }
+    };
+
     return (
         <section className="section-container" id="contact">
-            <h2>Business Card</h2>
-            <p style={{ maxWidth: '640px', marginBottom: '2rem' }}>
-                Feel free to connect with me directly.
+            <h2>Contact Me</h2>
+            <p style={{ maxWidth: '600px', marginBottom: '2rem' }}>
+                Have a project in mind or just want to say hi? Drop me a message and I'll get back to you!
             </p>
-
-            <div
-                className="glass-card"
-                style={{
-                    maxWidth: '760px',
-                    width: '100%',
-                    display: 'flex',
-                    alignItems: 'center',
-                    gap: '1.5rem',
-                    flexWrap: 'wrap',
-                }}
-            >
-                <img
-                    src="/images/vertical-me.jpg"
-                    alt="Nitish Devrani profile"
-                    style={{
-                        width: '120px',
-                        height: '120px',
-                        borderRadius: '50%',
-                        objectFit: 'cover',
-                        border: '3px solid var(--accent-color)',
-                        flexShrink: 0,
-                    }}
-                />
-
-                <div style={{ minWidth: '260px', flex: 1 }}>
-                    <h3 style={{ marginBottom: '0.75rem' }}>Nitish Devrani</h3>
-                    <p style={{ marginBottom: '0.6rem' }}>Full Stack Developer</p>
-                    <p style={{ marginBottom: '0.35rem' }}>
-                        Email:{' '}
-                        <a href="mailto:practiclemind@gmail.com">practiclemind@gmail.com</a>
-                    </p>
-                    <p>
-                        LinkedIn:{' '}
-                        <a
-                            href="https://www.linkedin.com/in/nitishdevrani/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            https://www.linkedin.com/in/nitishdevrani/
-                        </a>
-                    </p>
-                </div>
-            </div>
+            <h1>practiclemind@gmail.com</h1>
+            or find me <a href="https://www.linkedin.com/in/nitishdevrani/" target="_blank" rel="noopener noreferrer">on LinkedIn</a>
         </section>
     );
 };

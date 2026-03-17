@@ -201,27 +201,14 @@ const ContentLayer = ({ onSelectProject }: { onSelectProject: (id: string) => vo
           <div className="glass-card">
             <h3>Skills & Certifications</h3>
             <div style={{ marginTop: '1rem' }}>
-              <span className="badge">Next.js</span>
-              <span className="badge">React.js</span>
-              <span className="badge">TypeScript</span>
-              <span className="badge">Redux</span>
-              <span className="badge">Node.js</span>
-              <span className="badge">MySQL</span>
-              <span className="badge">MongoDB</span>
-              <span className="badge">Javascript</span>
-              <span className="badge">HTML</span>
-              <span className="badge">CSS</span>
-              <span className="badge">Python</span>
-              <span className="badge">Figma</span>
-              <span className="badge">Prompting</span>
+              <span className="badge">React & Next.js</span>
+              <span className="badge">TypeScript & Javascript</span>
+              <span className="badge">HTML & CSS</span>
+              <span className="badge">Node.js & Express</span>
               <span className="badge">Docker</span>
-              <span className="badge">Php</span>
-              <span className="badge">Wordpress</span>
-              <span className="badge">Drupal</span>
+              <span className="badge">AWS, Azure & GCP</span>
               <span className="badge">Machine Learning</span>
               <span className="badge">Deep Learning</span>
-              <span className="badge">Data Engineering</span>
-              <span className="badge">Model finetuning</span>
               <span className="badge" style={{ borderColor: 'var(--accent-secondary)' }}>3D Modeling / Printing</span>
             </div>
           </div>

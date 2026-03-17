@@ -1,0 +1,97 @@
+{
+  "hash": "68fe52a9",
+  "configHash": "5748c9e8",
+  "lockfileHash": "508dd9cb",
+  "browserHash": "fc0d083f",
+  "optimized": {
+    "react/jsx-dev-runtime": {
+      "src": "../../node_modules/react/jsx-dev-runtime.js",
+      "file": "react_jsx-dev-runtime.js",
+      "fileHash": "dad17e41",
+      "needsInterop": true
+    },
+    "react-dom/client": {
+      "src": "../../node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "6f605938",
+      "needsInterop": true
+    },
+    "react": {
+      "src": "../../node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "50623324",
+      "needsInterop": true
+    },
+    "@paper-design/shaders-react": {
+      "src": "../../node_modules/@paper-design/shaders-react/dist/index.js",
+      "file": "@paper-design_shaders-react.js",
+      "fileHash": "87aa187e",
+      "needsInterop": false
+    },
+    "@react-three/fiber": {
+      "src": "../../node_modules/@react-three/fiber/dist/react-three-fiber.esm.js",
+      "file": "@react-three_fiber.js",
+      "fileHash": "4ab3acd5",
+      "needsInterop": false
+    },
+    "@react-three/drei": {
+      "src": "../../node_modules/@react-three/drei/index.js",
+      "file": "@react-three_drei.js",
+      "fileHash": "d3f98df3",
+      "needsInterop": false
+    },
+    "three-stdlib": {
+      "src": "../../node_modules/three-stdlib/index.js",
+      "file": "three-stdlib.js",
+      "fileHash": "ce69dfeb",
+      "needsInterop": false
+    },
+    "three": {
+      "src": "../../node_modules/three/build/three.module.js",
+      "file": "three.js",
+      "fileHash": "6e6ebe84",
+      "needsInterop": false
+    },
+    "framer-motion": {
+      "src": "../../node_modules/framer-motion/dist/es/index.mjs",
+      "file": "framer-motion.js",
+      "fileHash": "7f50f3a2",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "hls-EGENMUVL": {
+      "file": "hls-EGENMUVL.js"
+    },
+    "vision_bundle-I4M6INX3": {
+      "file": "vision_bundle-I4M6INX3.js"
+    },
+    "chunk-TXGQJFWJ": {
+      "file": "chunk-TXGQJFWJ.js"
+    },
+    "chunk-IXEXY4UH": {
+      "file": "chunk-IXEXY4UH.js"
+    },
+    "chunk-IYPWW5WB": {
+      "file": "chunk-IYPWW5WB.js"
+    },
+    "chunk-T5U22SS2": {
+      "file": "chunk-T5U22SS2.js"
+    },
+    "chunk-PZMOWLZD": {
+      "file": "chunk-PZMOWLZD.js"
+    },
+    "chunk-5C6DFZPZ": {
+      "file": "chunk-5C6DFZPZ.js"
+    },
+    "chunk-Q5FEXFQP": {
+      "file": "chunk-Q5FEXFQP.js"
+    },
+    "chunk-JFSE5EMN": {
+      "file": "chunk-JFSE5EMN.js"
+    },
+    "chunk-PR4QN5HX": {
+      "file": "chunk-PR4QN5HX.js"
+    }
+  }
+}
