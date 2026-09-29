@@ -1,30 +1,46 @@
 [
     {
-        "id": "pub_ai_ethics_1",
-        "title": "Philosophy in AI",
-        "topic": "AI Ethics",
-        "pdfPath": "/data/ai_ethics/Philoshopy_in_ai.pdf",
-        "coverPath": "/data/ai_ethics/philosophy_cover.png"
-    },
-    {
-        "id": "pub_ai_ethics_2",
-        "title": "Bias in AI",
-        "topic": "AI Ethics",
-        "pdfPath": "/data/ai_ethics/bais_in_ai.pdf",
-        "coverPath": "/data/ai_ethics/bias_cover.png"
+        "id": "pub_vlm",
+        "title": "Project Abstract: VLM on Edge Devices",
+        "topic": "Edge Computing",
+        "pdfPath": "/data/vlm_on_edge_devices/Project Abstract_Nitish_Devrani-1.pdf",
+        "coverPath": "/data/vlm_on_edge_devices/card.png",
+        "author": "Nitish Devrani",
+        "lead": "The abstract behind the edge-quantization project — scope, baseline and roadmap.",
+        "about": "Project abstract for deploying vision-language models on resource-constrained edge hardware through ultra-low-bit quantization, from a CLIP baseline toward Qwen-VL and LLaVA.",
+        "pdfName": "Project Abstract_Nitish_Devrani.pdf"
     },
     {
         "id": "pub_multimodal_foundation",
         "title": "Multimodal Foundation Models",
         "topic": "Core AI",
         "pdfPath": "/data/AI agent/Mulimodal_foundation_models.pdf",
-        "coverPath": "/data/AI agent/card.png"
+        "coverPath": "/data/AI agent/card.png",
+        "author": "Nitish Devrani",
+        "lead": "How foundation models learn from text and images together.",
+        "about": "A report on multimodal foundation models, written alongside the Multimodal AI Agent project.",
+        "pdfName": "Multimodal_foundation_models.pdf"
     },
     {
-        "id": "pub_vlm",
-        "title": "Project Abstract: VLM on Edge Devices",
-        "topic": "Edge Computing",
-        "pdfPath": "/data/vlm_on_edge_devices/Project Abstract_Nitish_Devrani-1.pdf",
-        "coverPath": "/data/vlm_on_edge_devices/card.png"
+        "id": "pub_ai_ethics_2",
+        "title": "Bias in AI",
+        "topic": "AI Ethics",
+        "pdfPath": "/data/ai_ethics/bais_in_ai.pdf",
+        "coverPath": "/data/ai_ethics/bias_cover.png",
+        "author": "Nitish Devrani",
+        "lead": "Where bias enters AI systems, and what it costs.",
+        "about": "An essay on bias in AI systems.",
+        "pdfName": "Bias_in_AI.pdf"
+    },
+    {
+        "id": "pub_ai_ethics_1",
+        "title": "Philosophy in AI",
+        "topic": "AI Ethics",
+        "pdfPath": "/data/ai_ethics/Philoshopy_in_ai.pdf",
+        "coverPath": "/data/ai_ethics/philosophy_cover.png",
+        "author": "Nitish Devrani",
+        "lead": "The philosophical questions underneath intelligent machines.",
+        "about": "An essay on philosophy in AI.",
+        "pdfName": "Philosophy_in_AI.pdf"
     }
 ]

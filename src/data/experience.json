@@ -1,0 +1,39 @@
+[
+    {
+        "yr": "25",
+        "period": "Sep 2025 — Now",
+        "current": true,
+        "role": "Hiwi (Research Assistant)",
+        "org": "UTN",
+        "place": "Nuremberg",
+        "body": "Research-support and university initiatives — implementation, testing and iteration. Architected the German University Learning Review web app end-to-end.",
+        "tags": ["React", "Node.js", "MongoDB"]
+    },
+    {
+        "yr": "23",
+        "period": "Nov 2023 — Aug 2025",
+        "role": "Frontend Developer",
+        "org": "Petco",
+        "place": "Remote",
+        "body": "Created, upgraded and maintained PDP, PLP, brand pages and homepage experiences, with SEO improvements for high-traffic storefront pages.",
+        "tags": ["Next.js", "TypeScript", "SEO"]
+    },
+    {
+        "yr": "22",
+        "period": "Mar 2022 — Nov 2023",
+        "role": "Software Engineer",
+        "org": "Kellton",
+        "place": "Gurugram",
+        "body": "Built the merchant-facing sampling frontend for Adani One — responsive, accessible React components, REST integrations and PWA capabilities.",
+        "tags": ["React.js", "Redux", "PWA"]
+    },
+    {
+        "yr": "20",
+        "period": "Jan 2020 — Mar 2022",
+        "role": "Sr. Associate Consultant",
+        "org": "Oodles Technologies",
+        "place": "Gurugram",
+        "body": "Led a five-person team on Babyflix live streaming. Migrated a legacy PHP platform to React.js and mentored junior developers.",
+        "tags": ["Live streaming", "PHP → React", "Team lead"]
+    }
+]

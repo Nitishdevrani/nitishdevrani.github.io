@@ -1,0 +1,64 @@
+/* Organic design-system tokens (from the design handoff) + dark-theme overrides + keyframes. */
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo:wght@400&family=Figtree:wght@400;600;700&display=swap');
+
+:root {
+  --color-neutral-100: #f9f4ed;
+  --color-neutral-200: #eee7db;
+  --color-neutral-300: #dcd3c4;
+  --color-neutral-400: #c0b6a5;
+  --color-neutral-500: #a19786;
+  --color-neutral-600: #82796a;
+  --color-neutral-700: #645c50;
+  --color-neutral-800: #474238;
+  --color-neutral-900: #2e2b25;
+
+  --color-accent: #c67139;
+  --color-accent-100: #fff2eb;
+  --color-accent-200: #ffe1d0;
+  --color-accent-300: #ffc6a5;
+  --color-accent-400: #f6a06b;
+  --color-accent-500: #d67f48;
+  --color-accent-600: #b2622d;
+  --color-accent-700: #8c491a;
+  --color-accent-800: #643312;
+  --color-accent-900: #402310;
+
+  --color-accent-2-100: #f0fae1;
+  --color-accent-2-200: #e1eecc;
+  --color-accent-2-300: #ccdbb2;
+  --color-accent-2-400: #aebf92;
+  --color-accent-2-500: #8fa073;
+  --color-accent-2-600: #728157;
+  --color-accent-2-700: #56633f;
+  --color-accent-2-800: #3d472b;
+  --color-accent-2-900: #272e1b;
+
+  /* Dark theme */
+  --color-bg: var(--color-neutral-900);
+  --color-text: var(--color-neutral-100);
+  --color-surface: color-mix(in srgb, var(--color-neutral-800) 55%, var(--color-neutral-900));
+  --color-divider: color-mix(in srgb, var(--color-neutral-100) 20%, transparent);
+  --hairline: color-mix(in srgb, var(--color-neutral-100) 7%, transparent);
+  --hairline-strong: color-mix(in srgb, var(--color-neutral-100) 16%, transparent);
+
+  --font-heading: 'Caprasimo', system-ui, sans-serif;
+  --font-body: 'Figtree', system-ui, sans-serif;
+
+  --ease: cubic-bezier(.2, .7, .2, 1);
+  --blob: 58% 42% 55% 45% / 48% 58% 42% 52%;
+  --gutter: clamp(20px, 4vw, 56px);
+  --content: 1240px;
+}
+
+@keyframes morph {
+  0%, 100% { border-radius: 58% 42% 55% 45% / 48% 58% 42% 52%; }
+  33% { border-radius: 42% 58% 38% 62% / 60% 40% 60% 40%; }
+  66% { border-radius: 52% 48% 62% 38% / 40% 55% 45% 60%; }
+}
+@keyframes floaty { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-14px); } }
+@keyframes drift { 0%, 100% { transform: translate(0, 0) scale(1); } 50% { transform: translate(40px, -30px) scale(1.12); } }
+@keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+@keyframes pulse {
+  0%, 100% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--color-accent-2-400) 70%, transparent); }
+  60% { box-shadow: 0 0 0 10px transparent; }
+}

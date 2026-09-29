@@ -11,6 +11,39 @@
         "category": "ai",
         "papers": [
             "/data/AI agent/Mulimodal_foundation_models.pdf"
+        ],
+        "featured": true,
+        "order": 2,
+        "cover": "/data/AI agent/cover-1.png",
+        "lead": "A foundation-model agent that understands text and image inputs simultaneously.",
+        "cardTags": [
+            "AI / ML · Python"
+        ],
+        "cardBlurb": "An LLM-driven agent that solves multi-room MiniGrid puzzles — persistent memory map, grid-to-text prompting, stuck detection.",
+        "meta": [
+            {
+                "k": "Field",
+                "v": "AI / ML"
+            },
+            {
+                "k": "Environment",
+                "v": "MiniGrid"
+            },
+            {
+                "k": "Backbone",
+                "v": "GPT, configurable"
+            }
+        ],
+        "techStack": [
+            "Python",
+            "GPT",
+            "Prompt engineering"
+        ],
+        "galleryImages": [
+            "/data/AI agent/agent_map.png"
+        ],
+        "paperNames": [
+            "Multimodal Foundation Models"
         ]
     },
     {
@@ -52,6 +85,38 @@
         "category": "ai",
         "papers": [
             "/data/vlm_on_edge_devices/Project Abstract_Nitish_Devrani-1.pdf"
+        ],
+        "featured": true,
+        "order": 1,
+        "cover": "/data/vlm_on_edge_devices/cover-1.png",
+        "lead": "Optimize vision-language models to run efficiently on resource-constrained edge hardware.",
+        "cardTags": [
+            "Research",
+            "Python · PyTorch"
+        ],
+        "cardBlurb": "2- and 4-bit quantization of CLIP ViT-B/32 (577 MB FP32 baseline) — PTQ, QAT, GPTQ/AWQ — with a roadmap toward Qwen-VL and LLaVA.",
+        "meta": [
+            {
+                "k": "Field",
+                "v": "Computer Vision"
+            },
+            {
+                "k": "Baseline",
+                "v": "CLIP ViT-B/32 · 577 MB FP32"
+            },
+            {
+                "k": "Zero-shot",
+                "v": "86.16% on CIFAR-10"
+            }
+        ],
+        "techStack": [
+            "Python",
+            "PyTorch",
+            "CLIP",
+            "GPTQ / AWQ"
+        ],
+        "paperNames": [
+            "Project Abstract — VLM on Edge Devices"
         ]
     },
     {
@@ -124,7 +189,26 @@
             "Maintained production storefront components in a large e-commerce environment.",
             "Improved discoverability and performance through SEO enhancements."
         ],
-        "papers": []
+        "papers": [],
+        "featured": true,
+        "order": 4,
+        "cover": "/images/projects/petco-website/cover.png",
+        "lead": "Building and optimizing high-traffic e-commerce experiences across PDP, PLP, brand pages and homepage modules.",
+        "cardTags": [
+            "E-commerce · Next.js / TypeScript"
+        ],
+        "cardBlurb": "Built and upgraded PDP, PLP, brand and homepage modules for a high-traffic storefront, with SEO improvements.",
+        "meta": [
+            {
+                "k": "Role",
+                "v": "Frontend Developer"
+            },
+            {
+                "k": "Period",
+                "v": "Nov 2023 — Aug 2025"
+            }
+        ],
+        "urlLabel": "Open live site"
     },
     {
         "id": "adani_sampling",
@@ -185,7 +269,7 @@
     },
     {
         "id": "stream_data_pipeline_dashboard",
-        "title": "Stream Data pipeline Dashboard",
+        "title": "Stream Data Pipeline Dashboard",
         "skill": "Real-Time Analytics",
         "language": "Next.js / Kafka / WebSockets",
         "objective": "Build a real-time dashboard that streams and visualizes Kafka topic data using WebSocket updates.",
@@ -212,7 +296,27 @@
             "Integrated Kafka-backed data flow with WebSocket-based live updates.",
             "Implemented monitoring features including query insights and alert-centric metrics."
         ],
-        "papers": []
+        "papers": [],
+        "featured": true,
+        "order": 3,
+        "cardTitle": "Stream Pipeline Dashboard",
+        "cover": "/images/projects/stream-pipeline/cover.png",
+        "lead": "A real-time dashboard that streams and visualizes Kafka topic data using WebSocket updates.",
+        "cardTags": [
+            "Real-time · Kafka"
+        ],
+        "cardBlurb": "Kafka-processed data streamed to a Next.js dashboard over WebSockets — live query metrics, per-user insights and alerts.",
+        "meta": [
+            {
+                "k": "Field",
+                "v": "Real-Time Analytics"
+            },
+            {
+                "k": "Transport",
+                "v": "Kafka → WebSockets"
+            }
+        ],
+        "urlLabel": "View on GitHub"
     },
     {
         "id": "3d_models",
