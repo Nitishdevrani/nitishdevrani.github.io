@@ -7,6 +7,8 @@ export type Meta = { k: string; v: string };
 export type Project = {
   id: string;
   title: string;
+  category: 'ai' | 'web_development' | '3d_designing';
+  updatedAt?: string;
   cardTitle?: string;
   skill: string;
   language: string;
@@ -23,6 +25,8 @@ export type Project = {
   galleryImages?: string[];
   papers?: string[];
   paperNames?: string[];
+  models?: string[];
+  modelsBasePath?: string;
   url?: string;
   urlLabel?: string;
   deprecated?: boolean;
@@ -68,6 +72,7 @@ export type DetailItem = {
   stack: string[];
   tasks: string[];
   gallery: string[];
+  models: { name: string; src: string; fileName: string }[];
   docsTitle: string;
   docs: { name: string; src: string }[];
   url?: string;
@@ -76,9 +81,28 @@ export type DetailItem = {
 
 const fileName = (path: string) => path.split('/').pop() ?? path;
 
-export const featuredProjects = (projectsData as Project[])
-  .filter((p) => p.featured)
-  .sort((a, b) => (a.order ?? 0) - (b.order ?? 0));
+export const projectDomains = ['AI', 'Software Development', 'Designing'] as const;
+export type ProjectDomain = typeof projectDomains[number];
+export const projectDomain = (project: Project): ProjectDomain => ({
+  ai: 'AI', web_development: 'Software Development', '3d_designing': 'Designing',
+} as const)[project.category];
+
+// Dated projects sort newest first; existing editorial order is the fallback.
+export const projects = [...projectsData as Project[]].sort((a, b) =>
+  (Date.parse(b.updatedAt ?? '') || 0) - (Date.parse(a.updatedAt ?? '') || 0)
+  || (a.order ?? Number.MAX_SAFE_INTEGER) - (b.order ?? Number.MAX_SAFE_INTEGER));
+export const latestProjects = projectDomains.flatMap(domain => {
+  const project = projects.find(item => projectDomain(item) === domain);
+  return project ? [project] : [];
+});
+export function projectPageUrl(id?: string) {
+  const params = new URLSearchParams(window.location.search);
+  params.delete('view');
+  params.set('page', 'projects');
+  if (id) params.set('project', id);
+  else params.delete('project');
+  return `${window.location.pathname}?${params}`;
+}
 
 export const publications = publicationsData as Publication[];
 
@@ -101,6 +125,11 @@ const projectDetail = (p: Project): DetailItem => {
     stack: p.techStack ?? [],
     tasks: p.tasks ?? [],
     gallery: (p.galleryImages ?? []).filter((src) => src !== cover),
+    models: p.modelsBasePath ? (p.models ?? []).map(name => ({
+      name: name.replace(/\.stl$/i, '').replace(/-/g, ' '),
+      fileName: name,
+      src: `${p.modelsBasePath}/${encodeURIComponent(name)}`,
+    })) : [],
     docsTitle: 'Related documents',
     docs: papers.map((src, i) => ({ name: p.paperNames?.[i] ?? fileName(src), src })),
     url: p.url,
@@ -125,11 +154,12 @@ const paperDetail = (p: Publication): DetailItem => ({
   stack: [],
   tasks: [],
   gallery: [],
+  models: [],
   docsTitle: 'Read the paper',
   docs: [{ name: p.pdfName, src: p.pdfPath }],
 });
 
-const projectDetails = featuredProjects.map(projectDetail);
+const projectDetails = projects.map(projectDetail);
 const paperDetails = publications.map(paperDetail);
 
 export const detailItems: Record<string, DetailItem> = Object.fromEntries(

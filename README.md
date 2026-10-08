@@ -71,3 +71,26 @@ export default defineConfig([
   },
 ])
 ```
+
+
+## Daily GitHub contributions
+
+The Pages workflow refreshes the public contribution calendar for `nitishdevrani`
+before every deployment, including a daily run at 06:17 Europe/Berlin. It writes
+`src/data/github-contributions.json` in the build workspace and deploys the updated
+site without creating daily commits. No personal access token or extra secrets
+are required. Local builds use the checked-in snapshot; refresh it manually with:
+
+```sh
+node scripts/sync-github-contributions.mjs
+```
+
+Push the workflow, script and component changes to `main` to activate the schedule.
+You can also run **Deploy to GitHub Pages** manually from GitHub Actions. A failed
+fetch or invalid calendar stops deployment, leaving the previous site online.
+The importer reads GitHub's public calendar HTML and may need updating if GitHub
+changes that markup. The displayed snapshot date identifies the calendar's latest day.
+
+GitHub schedules can be delayed and are disabled after 60 days without repository
+activity in public repositories; re-enable the workflow in Actions if necessary.
+See [GitHub's schedule documentation](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#schedule).

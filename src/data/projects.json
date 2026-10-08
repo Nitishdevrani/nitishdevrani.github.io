@@ -328,6 +328,15 @@
         "imagePath": "/data/3d_models/cover.png",
         "type": "3d_model",
         "category": "3d_designing",
-        "papers": []
+        "papers": [],
+        "models": [
+            "Brush-holder.stl",
+            "Frispie.stl",
+            "Hinge.stl",
+            "Screw.stl",
+            "Toy-Dryer.stl",
+            "Wiper Fix.stl"
+        ],
+        "modelsBasePath": "/data/3d_models"
     }
 ]
