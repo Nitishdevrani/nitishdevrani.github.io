@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
-import { ArrowUpRight, Github, Linkedin } from 'lucide-react';
+import { ArrowUpRight, Download, Github, Linkedin } from 'lucide-react';
 import { detailItems, experience, publications } from '../data/content';
 import { portfolioCommunity, education } from '../data/profile';
 import { VideoSection, GlassPanel } from './VideoSection';
@@ -67,7 +67,11 @@ export default function PortfolioPage() {
             <h1>Nitish<br />Devrani<span>.</span></h1>
             <p className="exp-tagline">Full Stack Developer + <br />AI Researcher</p>
             <p className="exp-copy">Full-stack developer shipping React and Next.js products since 2020 — for Petco, Adani and Babyflix. Now in Nuremberg, working on vision-language models.</p>
-            <div className="exp-actions"><a className="exp-button" href="#projects">Explore my work <ArrowUpRight size={18} /></a><a className="exp-text-link" href="#contact">Contact me <ArrowUpRight size={16} /></a></div>
+            <div className="exp-actions">
+              <a className="exp-button" href="#projects">Explore my work <ArrowUpRight size={18} /></a>
+              <a className="exp-button" href="/data/nitish-devrani-full.pdf" download="nitish-devrani-full.pdf">Download CV <Download size={18} aria-hidden="true" /></a>
+              <a className="exp-text-link" href="#contact">Contact me <ArrowUpRight size={16} /></a>
+            </div>
             <p className="exp-location">M.Sc. AI & Robotics · UTN Nuremberg</p>
           </GlassPanel>
         </VideoSection>

@@ -1,0 +1,16 @@
+.image-stream-hero { position: relative; overflow: hidden; height: clamp(340px, 45vw, 560px); background: #1c1e19; border-radius: 18px; isolation: isolate; }
+.image-stream-scene, .image-stream-rails { position: absolute; inset: 0; }
+.image-stream-scene { pointer-events: none; }
+.image-stream-card { position: absolute; overflow: hidden; }
+.image-stream-image { display: block; height: 100%; width: 100%; object-fit: cover; }
+.image-stream-pause { position: absolute; z-index: 2; right: 18px; bottom: 18px; padding: 8px 14px; border: 1px solid #ffffff40; border-radius: 24px; background: #151613; color: #f4eee4; font: inherit; font-size: 12px; cursor: pointer; }
+.image-stream-heading { position: relative; z-index: 1; padding: 28px; text-align: center; }
+.image-stream-heading h3 { margin: 8px 0; }
+.image-stream-heading p { margin: 0; }
+.exp-project.exp-car-project { display: block; }
+.exp-car-project > .exp-text-link { display: inline-flex; align-items: center; gap: 10px; margin-top: 20px; }
+.exp-car-project:hover .image-stream-image { transform: none; }
+@media (prefers-reduced-motion: reduce) {
+  .portfolio .image-stream-card { animation: var(--stream-animation) !important; animation-play-state: paused !important; animation-delay: var(--stream-delay) !important; }
+  .image-stream-pause { display: none; }
+}

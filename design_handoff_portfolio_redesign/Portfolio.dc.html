@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="_ds/organic-df0687e7-9ce1-4513-acb3-0f3e710f352e/styles.css">
+<script src="_ds/organic-df0687e7-9ce1-4513-acb3-0f3e710f352e/_ds_bundle.js"></script>
+<script src="./image-slot.js"></script>
+<style>
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--color-neutral-900);color:var(--color-neutral-100)}
+a{color:var(--color-accent-400)}a:hover{color:var(--color-accent-300)}
+@keyframes morph{0%,100%{border-radius:58% 42% 55% 45%/48% 58% 42% 52%}33%{border-radius:42% 58% 38% 62%/60% 40% 60% 40%}66%{border-radius:52% 48% 62% 38%/40% 55% 45% 60%}}
+@keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-14px)}}
+@keyframes drift{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(40px,-30px) scale(1.12)}}
+@keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 0 color-mix(in srgb,var(--color-accent-2-400) 70%,transparent)}60%{box-shadow:0 0 0 10px transparent}}
+</style>
+</helmet>
+<div ref="{{ rootRef }}" style="--color-bg: var(--color-neutral-900); --color-text: var(--color-neutral-100); --color-surface: color-mix(in srgb, var(--color-neutral-800) 55%, var(--color-neutral-900)); --color-divider: color-mix(in srgb, var(--color-neutral-100) 20%, transparent); background: var(--color-neutral-900); color: var(--color-neutral-100); font-family: var(--font-body); overflow-x: clip; min-height: 100vh;">
+
+  <div style="position: sticky; top: 16px; z-index: 50; display: flex; justify-content: center; padding: 16px clamp(16px, 4vw, 56px) 0;">
+    <nav style="position: relative; display: flex; align-items: center; gap: 6px; flex-wrap: wrap; padding: 8px 8px 8px 22px; border-radius: 999px; background: color-mix(in srgb, var(--color-neutral-900) 72%, transparent); backdrop-filter: blur(18px); -webkit-backdrop-filter: blur(18px); border: 1px solid color-mix(in srgb, var(--color-neutral-100) 10%, transparent); box-shadow: 0 12px 40px color-mix(in srgb, #000 30%, transparent); overflow: hidden; width: min(100%, 1240px);">
+      <a href="#top" style="font-family: var(--font-heading); font-size: 22px; color: var(--color-neutral-100); text-decoration: none; margin-right: auto; display: flex; align-items: center; gap: 10px;"><span style="width: 14px; height: 14px; border-radius: 50%; background: var(--color-accent); display: inline-block;"></span>Nitish Devrani</a>
+      <a href="#experience" style="padding: 10px 16px; border-radius: 999px; color: var(--color-neutral-300); text-decoration: none; font-size: 15px; font-weight: 600;" style-hover="background: color-mix(in srgb, var(--color-neutral-100) 8%, transparent); color: var(--color-neutral-100);">Experience</a>
+      <a href="#education" style="padding: 10px 16px; border-radius: 999px; color: var(--color-neutral-300); text-decoration: none; font-size: 15px; font-weight: 600;" style-hover="background: color-mix(in srgb, var(--color-neutral-100) 8%, transparent); color: var(--color-neutral-100);">Education</a>
+      <a href="#projects" style="padding: 10px 16px; border-radius: 999px; color: var(--color-neutral-300); text-decoration: none; font-size: 15px; font-weight: 600;" style-hover="background: color-mix(in srgb, var(--color-neutral-100) 8%, transparent); color: var(--color-neutral-100);">Projects</a>
+      <a href="#writing" style="padding: 10px 16px; border-radius: 999px; color: var(--color-neutral-300); text-decoration: none; font-size: 15px; font-weight: 600;" style-hover="background: color-mix(in srgb, var(--color-neutral-100) 8%, transparent); color: var(--color-neutral-100);">Writing</a>
+      <a href="#community" style="padding: 10px 16px; border-radius: 999px; color: var(--color-neutral-300); text-decoration: none; font-size: 15px; font-weight: 600;" style-hover="background: color-mix(in srgb, var(--color-neutral-100) 8%, transparent); color: var(--color-neutral-100);">Community</a>
+      <a href="#contact" class="btn btn-primary" style="padding: 12px 22px; font-size: 15px;">Say hello</a>
+      <span style="position: absolute; left: 0; bottom: 0; height: 3px; width: calc(var(--sp, 0) * 100%); background: var(--color-accent); border-radius: 999px;"></span>
+    </nav>
+  </div>
+
+  <section id="top" data-sec="hero" onMouseMove="{{ onHeroMove }}" style="position: relative; margin-top: -84px; padding: 140px clamp(20px, 4vw, 56px) 60px; overflow: hidden;">
+    <div style="position: absolute; inset: 0; pointer-events: none; background: radial-gradient(520px circle at var(--mx, 70%) var(--my, 40%), color-mix(in srgb, var(--color-accent-2-500) 16%, transparent), transparent 65%);"></div>
+    <div data-anim="drift 18s ease-in-out infinite" style="position: absolute; width: 620px; height: 620px; right: -120px; top: 40px; border-radius: 50%; background: radial-gradient(circle, color-mix(in srgb, var(--color-accent) 45%, transparent), transparent 68%); filter: blur(30px); pointer-events: none;"></div>
+    <div data-anim="drift 22s ease-in-out -6s infinite reverse" style="position: absolute; width: 480px; height: 480px; left: 22%; bottom: -160px; border-radius: 50%; background: radial-gradient(circle, color-mix(in srgb, var(--color-accent-2-500) 40%, transparent), transparent 68%); filter: blur(30px); pointer-events: none;"></div>
+
+    <div style="position: relative; max-width: 1240px; margin: 0 auto; display: flex; flex-wrap: wrap; align-items: center; gap: 24px 40px;">
+      <div style="flex: 1 1 480px; min-width: 0; position: relative; z-index: 2; transform: translateX(calc(var(--hp, 0) * -60px)); opacity: calc(1 - var(--hp, 0) * 0.8);">
+        <div data-reveal="up" style="display: inline-flex; align-items: center; gap: 10px; padding: 9px 18px 9px 12px; border-radius: 999px; background: color-mix(in srgb, var(--color-accent-2-500) 18%, transparent); color: var(--color-accent-2-200); font-size: 14px; font-weight: 600;">
+          <span data-anim="pulse 2.4s ease-out infinite" style="width: 10px; height: 10px; border-radius: 50%; background: var(--color-accent-2-400);"></span>M.Sc. AI &amp; Robotics · UTN Nuremberg
+        </div>
+        <h1 data-reveal="up" data-delay="80" style="font-family: var(--font-heading); font-size: clamp(64px, 9.5vw, 148px); line-height: 0.9; letter-spacing: -0.03em; margin: 28px 0 0; color: var(--color-neutral-100);">Nitish<br>Devrani</h1>
+        <p data-reveal="up" data-delay="160" style="font-family: var(--font-heading); font-size: clamp(26px, 3vw, 40px); line-height: 1.15; margin: 22px 0 0; color: var(--color-accent-400); max-width: 16ch; text-wrap: balance;">from web products to AI at the edge.</p>
+        <p data-reveal="up" data-delay="240" style="font-size: 18px; line-height: 1.6; color: var(--color-neutral-300); max-width: 46ch; margin: 22px 0 0; text-wrap: pretty;">Full-stack developer shipping React and Next.js products since 2020 — for Petco, Adani One and Babyflix. Now in Nuremberg, fitting vision-language models onto edge devices.</p>
+        <div data-reveal="up" data-delay="320" style="display: flex; flex-wrap: wrap; gap: 12px; margin-top: 34px;">
+          <a href="#projects" class="btn btn-primary" style="padding: 16px 28px; font-size: 17px;">See selected work<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a>
+          <a href="#contact" class="btn btn-secondary" style="padding: 16px 28px; font-size: 17px; color: var(--color-neutral-100);">Download CV</a>
+        </div>
+      </div>
+
+      <div style="flex: 1 1 420px; min-width: 0; position: relative; height: clamp(520px, 64vw, 760px); transform: translateY(calc(var(--hp, 0) * -80px)) scale(calc(1 + var(--hp, 0) * 0.05));">
+        <sc-if value="{{ isBlob }}" hint-placeholder-val="{{ true }}">
+          <div data-reveal="scale" style="position: absolute; inset: 0 0 0 4%;">
+            <div data-anim="morph 16s ease-in-out infinite" style="position: absolute; inset: 0; overflow: hidden; border-radius: 58% 42% 55% 45% / 48% 58% 42% 52%; background: var(--color-neutral-800); box-shadow: 0 40px 100px color-mix(in srgb, #000 45%, transparent);">
+              <image-slot id="hero-portrait" class="washed" shape="rect" src="images/portrait-hero.jpg" placeholder="Drop your portrait" style="width: 100%; height: 100%;"></image-slot>
+            </div>
+          </div>
+        </sc-if>
+        <sc-if value="{{ isArch }}">
+          <div data-reveal="scale" style="position: absolute; inset: 0 6% 0 10%; overflow: hidden; border-radius: 999px 999px 64px 64px; background: var(--color-neutral-800); box-shadow: 0 40px 100px color-mix(in srgb, #000 45%, transparent);">
+            <image-slot id="hero-portrait" class="washed" shape="rect" src="images/portrait-hero.jpg" placeholder="Drop your portrait" style="width: 100%; height: 100%;"></image-slot>
+          </div>
+        </sc-if>
+        <sc-if value="{{ isCircle }}">
+          <div data-reveal="scale" style="position: absolute; left: 50%; top: 50%; width: min(100%, 640px); aspect-ratio: 1; translate: -50% -50%; overflow: hidden; border-radius: 50%; background: var(--color-neutral-800); box-shadow: 0 0 0 18px color-mix(in srgb, var(--color-accent) 22%, transparent), 0 40px 100px color-mix(in srgb, #000 45%, transparent);">
+            <image-slot id="hero-portrait" class="washed" shape="rect" src="images/portrait-hero.jpg" placeholder="Drop your portrait" style="width: 100%; height: 100%;"></image-slot>
+          </div>
+        </sc-if>
+
+        <div data-anim="floaty 6s ease-in-out infinite" style="position: absolute; top: 9%; left: -2%; padding: 12px 20px; border-radius: 999px; background: var(--color-accent); color: var(--color-neutral-900); font-family: var(--font-heading); font-size: 18px; box-shadow: 0 14px 30px color-mix(in srgb, #000 35%, transparent); pointer-events: none;">Vision-language models</div>
+        <div data-anim="floaty 7s ease-in-out -2s infinite" style="position: absolute; top: 34%; right: -1%; padding: 12px 20px; border-radius: 999px; background: var(--color-accent-2-400); color: var(--color-accent-2-900); font-family: var(--font-heading); font-size: 18px; box-shadow: 0 14px 30px color-mix(in srgb, #000 35%, transparent); pointer-events: none;">Next.js</div>
+        <div data-anim="floaty 8s ease-in-out -4s infinite" style="position: absolute; bottom: 20%; left: 2%; padding: 12px 20px; border-radius: 999px; background: var(--color-neutral-100); color: var(--color-neutral-900); font-family: var(--font-heading); font-size: 18px; box-shadow: 0 14px 30px color-mix(in srgb, #000 35%, transparent); pointer-events: none;">Edge AI</div>
+        <div style="position: absolute; bottom: 4%; right: 6%; display: flex; align-items: center; gap: 12px; padding: 12px 20px 12px 12px; border-radius: 999px; background: color-mix(in srgb, var(--color-neutral-900) 78%, transparent); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); border: 1px solid color-mix(in srgb, var(--color-neutral-100) 12%, transparent); pointer-events: none;">
+          <span style="width: 40px; height: 40px; border-radius: 50%; background: var(--color-accent-2-700); display: grid; place-items: center; color: var(--color-accent-2-100);"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"><path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path><rect width="20" height="14" x="2" y="6" rx="2"></rect></svg></span>
+          <span style="display: flex; flex-direction: column; line-height: 1.25;"><span style="font-size: 12px; color: var(--color-neutral-400); letter-spacing: 0.06em; text-transform: uppercase; font-weight: 600;">Currently</span><span style="font-size: 15px; font-weight: 600; color: var(--color-neutral-100);">Hiwi, UTN Nuremberg</span></span>
+        </div>
+      </div>
+    </div>
+
+    <a href="#experience" data-anim="floaty 3s ease-in-out infinite" style="position: relative; z-index: 2; margin: 28px auto 0; width: 56px; height: 88px; border-radius: 999px; border: 1.5px solid color-mix(in srgb, var(--color-neutral-100) 22%, transparent); display: flex; align-items: flex-end; justify-content: center; padding-bottom: 14px; color: var(--color-neutral-300);" style-hover="color: var(--color-accent-400); border-color: var(--color-accent-400);"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"></path><path d="m19 12-7 7-7-7"></path></svg></a>
+  </section>
+
+  <div style="padding: 30px 0 10px; transform: rotate(-2.5deg); margin: 0 -40px;">
+    <div style="background: var(--color-accent); border-radius: 999px; overflow: hidden; padding: 20px 0; box-shadow: 0 20px 60px color-mix(in srgb, var(--color-accent) 25%, transparent);">
+      <div data-anim="marquee 38s linear infinite" style="display: flex; width: max-content; gap: 0;">
+        <sc-for list="{{ marquee }}" as="m" hint-placeholder-count="8">
+          <span style="display: flex; align-items: center; gap: 28px; padding-right: 28px; font-family: var(--font-heading); font-size: 30px; color: var(--color-neutral-900); white-space: nowrap;">{{ m }}<span style="width: 12px; height: 12px; border-radius: 50%; background: var(--color-neutral-900); opacity: 0.55;"></span></span>
+        </sc-for>
+      </div>
+    </div>
+  </div>
+
+  <section id="experience" style="padding: 140px clamp(20px, 4vw, 56px) 100px; scroll-margin-top: 80px;">
+    <div style="max-width: 1240px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 48px 72px; align-items: flex-start;">
+      <div data-reveal="up" style="flex: 1 1 100%; display: flex; align-items: center; gap: 20px; margin-bottom: 48px;"><span style="font-family: var(--font-heading); font-size: 32px; line-height: 1; color: var(--color-accent-400);">01</span><span style="flex: 1; height: 6px; border-radius: 999px; background: color-mix(in srgb, var(--color-neutral-100) 10%, transparent);"></span><span style="width: 16px; height: 16px; border-radius: 50%; background: var(--color-accent);"></span></div>
+
+      <div style="flex: 1 1 320px; min-width: 0; position: sticky; top: 120px;">
+        <h2 data-reveal="up" data-delay="80" style="font-family: var(--font-heading); font-size: clamp(60px, 9vw, 136px); line-height: 1; letter-spacing: -0.02em; margin: 0; text-wrap: balance;">The ladder so far</h2>
+        <p data-reveal="up" data-delay="160" style="font-size: 18px; line-height: 1.6; color: var(--color-neutral-400); max-width: 34ch; margin: 20px 0 0; text-wrap: pretty;">Four rungs since 2020 — from leading a streaming team in Gurugram to research support in Nuremberg.</p>
+      </div>
+
+      <div data-track="exp" style="flex: 2 1 560px; min-width: 0; position: relative; display: flex; flex-direction: column; gap: 28px;">
+        <div style="position: absolute; left: 27px; top: 28px; bottom: 28px; width: 6px; border-radius: 999px; background: color-mix(in srgb, var(--color-neutral-100) 10%, transparent); overflow: hidden;">
+          <div style="width: 100%; height: calc(var(--xp, 0) * 100%); border-radius: 999px; background: linear-gradient(var(--color-accent-2-400), var(--color-accent));"></div>
+        </div>
+        <sc-for list="{{ experience }}" as="job" hint-placeholder-count="4">
+          <div data-reveal="up" style="position: relative; display: grid; grid-template-columns: 60px minmax(0, 1fr); gap: 22px; align-items: start;">
+            <div style="width: 60px; height: 60px; border-radius: 50%; background: var(--color-neutral-900); border: 3px solid var(--color-accent); display: grid; place-items: center; font-family: var(--font-heading); font-size: 20px; color: var(--color-accent-300); position: relative; z-index: 1; margin-top: 18px;">{{ job.yr }}</div>
+            <div style="padding: 30px 34px; border-radius: 44px 44px 44px 14px; background: var(--color-surface); border: 1px solid color-mix(in srgb, var(--color-neutral-100) 7%, transparent); transition: transform .5s cubic-bezier(.2,.7,.2,1), background .4s;" style-hover="transform: translateX(8px); background: color-mix(in srgb, var(--color-neutral-800) 80%, var(--color-neutral-900));">
+              <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 10px;">
+                <span style="padding: 5px 14px; border-radius: 999px; background: color-mix(in srgb, var(--color-neutral-100) 8%, transparent); color: var(--color-neutral-300); font-size: 13px; font-weight: 600;">{{ job.period }}</span>
+                <sc-if value="{{ job.current }}"><span style="display: inline-flex; align-items: center; gap: 7px; padding: 5px 14px; border-radius: 999px; background: color-mix(in srgb, var(--color-accent-2-500) 22%, transparent); color: var(--color-accent-2-200); font-size: 13px; font-weight: 600;"><span style="width: 7px; height: 7px; border-radius: 50%; background: var(--color-accent-2-400);"></span>Now</span></sc-if>
+              </div>
+              <h3 style="font-family: var(--font-heading); font-size: 30px; line-height: 1.1; margin: 16px 0 0; color: var(--color-neutral-100);">{{ job.role }}</h3>
+              <div style="font-size: 16px; font-weight: 600; color: var(--color-accent-400); margin-top: 6px;">{{ job.org }} · <span style="color: var(--color-neutral-400); font-weight: 400;">{{ job.place }}</span></div>
+              <p style="font-size: 16.5px; line-height: 1.6; color: var(--color-neutral-300); margin: 14px 0 0; max-width: 58ch; text-wrap: pretty;">{{ job.body }}</p>
+              <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px;">
+                <sc-for list="{{ job.tags }}" as="t" hint-placeholder-count="2">
+                  <span style="padding: 6px 14px; border-radius: 999px; border: 1px solid color-mix(in srgb, var(--color-neutral-100) 16%, transparent); color: var(--color-neutral-200); font-size: 13px;">{{ t }}</span>
+                </sc-for>
+              </div>
+            </div>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+  <section id="education" style="padding: 80px clamp(20px, 4vw, 56px) 120px; scroll-margin-top: 80px;">
+    <div style="max-width: 1240px; margin: 0 auto;">
+      <div data-reveal="up" style="flex: 1 1 100%; display: flex; align-items: center; gap: 20px; margin-bottom: 48px;"><span style="font-family: var(--font-heading); font-size: 32px; line-height: 1; color: var(--color-accent-400);">02</span><span style="flex: 1; height: 6px; border-radius: 999px; background: color-mix(in srgb, var(--color-neutral-100) 10%, transparent);"></span><span style="width: 16px; height: 16px; border-radius: 50%; background: var(--color-accent);"></span></div>
+
+      <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px;">
+        <div>
+          <h2 data-reveal="up" data-delay="80" style="font-family: var(--font-heading); font-size: clamp(60px, 9vw, 136px); line-height: 1; letter-spacing: -0.02em; margin: 0;">Step by step</h2>
+        </div>
+        <p data-reveal="up" data-delay="160" style="font-size: 18px; line-height: 1.6; color: var(--color-neutral-400); max-width: 36ch; margin: 0; text-wrap: pretty;">From computer applications to AI and robotics — each step a little higher.</p>
+      </div>
+
+      <div style="display: flex; flex-wrap: wrap; align-items: flex-end; gap: 18px; margin-top: 64px;">
+        <div data-reveal="up" style="flex: 1 1 260px; min-width: 0; min-height: 300px; display: flex; flex-direction: column; justify-content: flex-end; padding: 34px; border-radius: 64px 64px 28px 28px; background: var(--color-accent-900);">
+          <div style="width: 64px; height: 64px; border-radius: 50%; background: var(--color-accent-700); display: grid; place-items: center; font-family: var(--font-heading); font-size: 18px; color: var(--color-accent-100); margin-bottom: auto;">BCA</div>
+          <div style="font-size: 13px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-accent-300); margin-top: 40px;">2017 — 2020</div>
+          <h3 style="font-family: var(--font-heading); font-size: 28px; line-height: 1.1; margin: 10px 0 0; color: var(--color-accent-100);">Bachelor’s in Computer Application</h3>
+          <p style="font-size: 16px; line-height: 1.55; color: var(--color-accent-200); margin: 10px 0 0;">Maharishi Dayanand University, India</p>
+        </div>
+        <div data-reveal="up" data-delay="120" style="flex: 1 1 260px; min-width: 0; min-height: 400px; display: flex; flex-direction: column; justify-content: flex-end; padding: 34px; border-radius: 64px 64px 28px 28px; background: var(--color-accent-800);">
+          <div style="width: 64px; height: 64px; border-radius: 50%; background: var(--color-accent-600); display: grid; place-items: center; font-family: var(--font-heading); font-size: 18px; color: var(--color-accent-100); margin-bottom: auto;">MCA</div>
+          <div style="font-size: 13px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-accent-300); margin-top: 40px;">2020 — 2022</div>
+          <h3 style="font-family: var(--font-heading); font-size: 28px; line-height: 1.1; margin: 10px 0 0; color: var(--color-accent-100);">Master’s in Computer Application</h3>
+          <p style="font-size: 16px; line-height: 1.55; color: var(--color-accent-200); margin: 10px 0 0;">Gurugram University, India</p>
+        </div>
+        <div data-reveal="up" data-delay="240" style="flex: 1 1 260px; min-width: 0; min-height: 500px; display: flex; flex-direction: column; justify-content: flex-end; padding: 34px; border-radius: 64px 64px 28px 28px; background: var(--color-accent-700); position: relative;">
+          <div style="width: 64px; height: 64px; border-radius: 50%; background: var(--color-accent-400); display: grid; place-items: center; font-family: var(--font-heading); font-size: 18px; color: var(--color-accent-900); margin-bottom: auto;">M.Sc</div>
+          <div style="font-size: 13px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-accent-200); margin-top: 40px;">2024 — 2026</div>
+          <h3 style="font-family: var(--font-heading); font-size: 28px; line-height: 1.1; margin: 10px 0 0; color: var(--color-accent-100);">Master’s in AI &amp; Robotics</h3>
+          <p style="font-size: 16px; line-height: 1.55; color: var(--color-accent-100); margin: 10px 0 0;">University of Technology Nuremberg, Germany</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" style="padding: 80px clamp(20px, 4vw, 56px) 120px; scroll-margin-top: 80px;">
+    <div style="max-width: 1240px; margin: 0 auto;">
+      <div data-reveal="up" style="flex: 1 1 100%; display: flex; align-items: center; gap: 20px; margin-bottom: 48px;"><span style="font-family: var(--font-heading); font-size: 32px; line-height: 1; color: var(--color-accent-400);">03</span><span style="flex: 1; height: 6px; border-radius: 999px; background: color-mix(in srgb, var(--color-neutral-100) 10%, transparent);"></span><span style="width: 16px; height: 16px; border-radius: 50%; background: var(--color-accent);"></span></div>
+
+      <h2 data-reveal="up" data-delay="80" style="font-family: var(--font-heading); font-size: clamp(60px, 9vw, 136px); line-height: 1; letter-spacing: -0.02em; margin: 0; max-width: 14ch;">Things I’ve grown</h2>
+
+      <div style="display: flex; flex-wrap: wrap; gap: 22px; margin-top: 56px;">
+        <div data-reveal="up" style="flex: 7 1 460px; min-width: 0;">
+          <a href="#projects" onClick="{{ openP0 }}" style="display: flex; flex-direction: column; gap: 22px; padding: 18px 18px 34px; border-radius: 56px; background: var(--color-surface); color: inherit; text-decoration: none; transition: transform .6s cubic-bezier(.2,.7,.2,1), box-shadow .6s; height: 100%; box-sizing: border-box;" style-hover="transform: translateY(-8px); box-shadow: 0 30px 70px color-mix(in srgb, #000 40%, transparent);">
+            <div style="height: 360px; border-radius: 42px; overflow: hidden;"><image-slot id="proj-vlm" class="washed" shape="rect" src="images/vlm.png" placeholder="VLM on Edge" style="width: 100%; height: 100%;"></image-slot></div>
+            <div style="padding: 0 18px; display: flex; flex-direction: column; gap: 12px;">
+              <div style="display: flex; flex-wrap: wrap; gap: 8px;"><span style="padding: 6px 14px; border-radius: 999px; background: color-mix(in srgb, var(--color-accent) 18%, transparent); color: var(--color-accent-300); font-size: 13px; font-weight: 600;">Research</span><span style="padding: 6px 14px; border-radius: 999px; border: 1px solid color-mix(in srgb, var(--color-neutral-100) 16%, transparent); color: var(--color-neutral-200); font-size: 13px;">Python · PyTorch</span></div>
+              <div style="display: flex; align-items: flex-end; justify-content: space-between; gap: 16px;">
+                <div><h3 style="font-family: var(--font-heading); font-size: 40px; line-height: 1; margin: 6px 0 0;">VLM on Edge Devices</h3><p style="font-size: 17px; line-height: 1.55; color: var(--color-neutral-300); margin: 10px 0 0; max-width: 44ch;">2- and 4-bit quantization of CLIP ViT-B/32 (577 MB FP32 baseline) — PTQ, QAT, GPTQ/AWQ — with a roadmap toward Qwen-VL and LLaVA.</p></div>
+                <span style="flex: none; width: 60px; height: 60px; border-radius: 50%; background: var(--color-accent); color: var(--color-neutral-900); display: grid; place-items: center;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></span>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div data-reveal="up" data-delay="120" style="flex: 5 1 340px; min-width: 0;">
+          <a href="#projects" onClick="{{ openP1 }}" style="display: flex; flex-direction: column; gap: 20px; padding: 36px; border-radius: 56px; background: var(--color-accent-2-800); color: inherit; text-decoration: none; transition: transform .6s cubic-bezier(.2,.7,.2,1), box-shadow .6s; height: 100%; box-sizing: border-box;" style-hover="transform: translateY(-8px); box-shadow: 0 30px 70px color-mix(in srgb, #000 40%, transparent);">
+            <div style="width: 240px; height: 240px; max-width: 100%; border-radius: 50%; overflow: hidden; align-self: flex-end; box-shadow: 0 0 0 14px color-mix(in srgb, var(--color-accent-2-400) 20%, transparent);"><image-slot id="proj-agent" class="washed" shape="rect" src="images/agent.png" placeholder="Multimodal AI Agent" style="width: 100%; height: 100%;"></image-slot></div>
+            <div style="margin-top: auto;">
+              <span style="padding: 6px 14px; border-radius: 999px; background: var(--color-accent-2-400); color: var(--color-accent-2-900); font-size: 13px; font-weight: 600;">AI / ML · Python</span>
+              <h3 style="font-family: var(--font-heading); font-size: 40px; line-height: 1; margin: 18px 0 0; color: var(--color-accent-2-100);">Multimodal AI Agent</h3>
+              <p style="font-size: 17px; line-height: 1.55; color: var(--color-accent-2-200); margin: 10px 0 0;">An LLM-driven agent that solves multi-room MiniGrid puzzles — persistent memory map, grid-to-text prompting, stuck detection.</p>
+            </div>
+          </a>
+        </div>
+
+        <div data-reveal="up" style="flex: 5 1 340px; min-width: 0;">
+          <a href="#projects" onClick="{{ openP2 }}" style="display: flex; flex-direction: column; gap: 20px; padding: 36px; border-radius: 56px; background: var(--color-accent-900); color: inherit; text-decoration: none; transition: transform .6s cubic-bezier(.2,.7,.2,1), box-shadow .6s; height: 100%; box-sizing: border-box;" style-hover="transform: translateY(-8px); box-shadow: 0 30px 70px color-mix(in srgb, #000 40%, transparent);">
+            <span style="align-self: flex-start; padding: 6px 14px; border-radius: 999px; background: var(--color-accent-400); color: var(--color-accent-900); font-size: 13px; font-weight: 600;">Real-time · Kafka</span>
+            <h3 style="font-family: var(--font-heading); font-size: 40px; line-height: 1; margin: 0; color: var(--color-accent-100);">Stream Pipeline Dashboard</h3>
+            <p style="font-size: 17px; line-height: 1.55; color: var(--color-accent-200); margin: 0;">Kafka-processed data streamed to a Next.js dashboard over WebSockets — live query metrics, per-user insights and alerts.</p>
+            <div data-anim="morph 14s ease-in-out -3s infinite" style="height: 220px; margin-top: auto; overflow: hidden; border-radius: 58% 42% 55% 45% / 48% 58% 42% 52%;"><image-slot id="proj-stream" class="washed" shape="rect" src="images/stream.png" placeholder="Stream dashboard" style="width: 100%; height: 100%;"></image-slot></div>
+          </a>
+        </div>
+
+        <div data-reveal="up" data-delay="120" style="flex: 7 1 460px; min-width: 0;">
+          <a href="#projects" onClick="{{ openP3 }}" style="display: flex; flex-wrap: wrap; align-items: center; gap: 30px; padding: 18px 36px 18px 18px; border-radius: 56px; background: var(--color-surface); color: inherit; text-decoration: none; transition: transform .6s cubic-bezier(.2,.7,.2,1), box-shadow .6s; height: 100%; box-sizing: border-box;" style-hover="transform: translateY(-8px); box-shadow: 0 30px 70px color-mix(in srgb, #000 40%, transparent);">
+            <div style="flex: 1 1 220px; height: 340px; border-radius: 999px; overflow: hidden;"><image-slot id="proj-petco" class="washed" shape="rect" src="images/petco.png" placeholder="Petco storefront" style="width: 100%; height: 100%;"></image-slot></div>
+            <div style="flex: 1 1 240px; min-width: 0; padding: 12px 0;">
+              <span style="padding: 6px 14px; border-radius: 999px; background: color-mix(in srgb, var(--color-accent-2-500) 22%, transparent); color: var(--color-accent-2-200); font-size: 13px; font-weight: 600;">E-commerce · Next.js / TypeScript</span>
+              <h3 style="font-family: var(--font-heading); font-size: 40px; line-height: 1; margin: 18px 0 0;">Petco Website</h3>
+              <p style="font-size: 17px; line-height: 1.55; color: var(--color-neutral-300); margin: 10px 0 0;">Built and upgraded PDP, PLP, brand and homepage modules for a high-traffic storefront, with SEO improvements.</p>
+              <span style="display: inline-flex; align-items: center; gap: 8px; margin-top: 20px; color: var(--color-accent-400); font-weight: 700; font-size: 16px;">View project<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="writing" style="padding: 80px clamp(20px, 4vw, 56px) 140px; scroll-margin-top: 80px;">
+    <div style="max-width: 1240px; margin: 0 auto;">
+      <div data-reveal="up" style="flex: 1 1 100%; display: flex; align-items: center; gap: 20px; margin-bottom: 48px;"><span style="font-family: var(--font-heading); font-size: 32px; line-height: 1; color: var(--color-accent-400);">04</span><span style="flex: 1; height: 6px; border-radius: 999px; background: color-mix(in srgb, var(--color-neutral-100) 10%, transparent);"></span><span style="width: 16px; height: 16px; border-radius: 50%; background: var(--color-accent);"></span></div>
+
+      <h2 data-reveal="up" data-delay="80" style="font-family: var(--font-heading); font-size: clamp(60px, 9vw, 136px); line-height: 1; letter-spacing: -0.02em; margin: 0;">On paper</h2>
+      <div style="display: flex; flex-direction: column; gap: 14px; margin-top: 56px;">
+        <sc-for list="{{ pubs }}" as="p" hint-placeholder-count="3">
+          <a data-reveal="left" href="#writing" onClick="{{ p.open }}" style="display: flex; flex-wrap: wrap; align-items: center; gap: 18px 28px; padding: 20px 20px 20px 20px; border-radius: 999px; background: var(--color-surface); color: inherit; text-decoration: none; border: 1px solid color-mix(in srgb, var(--color-neutral-100) 7%, transparent);" style-hover="background: color-mix(in srgb, var(--color-accent) 14%, var(--color-neutral-900)); border-color: color-mix(in srgb, var(--color-accent) 40%, transparent);">
+            <span style="flex: none; width: 84px; height: 84px; border-radius: 50%; background: var(--color-neutral-900); display: grid; place-items: center; font-family: var(--font-heading); font-size: 20px; color: var(--color-accent-300);">{{ p.n }}</span>
+            <span style="flex: 1 1 380px; min-width: 0; display: flex; flex-direction: column; gap: 6px;">
+              <span style="font-family: var(--font-heading); font-size: 23px; line-height: 1.2; color: var(--color-neutral-100); text-wrap: balance;">{{ p.title }}</span>
+              <span style="font-size: 15px; color: var(--color-neutral-400);">{{ p.authors }}</span>
+            </span>
+            <span style="padding: 8px 16px; border-radius: 999px; background: color-mix(in srgb, var(--color-accent-2-500) 22%, transparent); color: var(--color-accent-2-200); font-size: 14px; font-weight: 600;">{{ p.venue }}</span>
+            <span style="flex: none; width: 56px; height: 56px; border-radius: 50%; border: 1.5px solid color-mix(in srgb, var(--color-neutral-100) 20%, transparent); display: grid; place-items: center; color: var(--color-neutral-100);"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></span>
+          </a>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+  <section id="community" style="position: relative; scroll-margin-top: 80px;">
+    <svg viewBox="0 0 1440 120" preserveAspectRatio="none" style="display: block; width: 100%; height: 90px; margin-bottom: -1px;"><path d="M0 80 C 240 10, 480 10, 720 60 S 1200 120, 1440 40 L 1440 120 L 0 120 Z" style="fill: var(--color-accent-2-900);"></path></svg>
+    <div style="background: var(--color-accent-2-900); padding: 60px clamp(20px, 4vw, 56px) 120px; position: relative; overflow: hidden;">
+      <div data-anim="morph 20s ease-in-out infinite" style="position: absolute; width: 420px; height: 420px; right: -120px; top: -60px; background: var(--color-accent-2-800); border-radius: 58% 42% 55% 45% / 48% 58% 42% 52%; pointer-events: none;"></div>
+      <div style="position: relative; max-width: 1240px; margin: 0 auto;">
+      <div data-reveal="up" style="flex: 1 1 100%; display: flex; align-items: center; gap: 20px; margin-bottom: 48px;"><span style="font-family: var(--font-heading); font-size: 32px; line-height: 1; color: var(--color-accent-2-300);">05</span><span style="flex: 1; height: 6px; border-radius: 999px; background: color-mix(in srgb, var(--color-accent-2-100) 14%, transparent);"></span><span style="width: 16px; height: 16px; border-radius: 50%; background: var(--color-accent-2-400);"></span></div>
+
+        <h2 data-reveal="up" data-delay="80" style="font-family: var(--font-heading); font-size: clamp(60px, 9vw, 136px); line-height: 1; letter-spacing: -0.02em; margin: 0; color: var(--color-accent-2-100); max-width: 13ch;">Off the clock, on purpose</h2>
+        <p data-reveal="up" data-delay="160" style="font-size: 18px; line-height: 1.6; color: var(--color-accent-2-200); max-width: 46ch; margin: 20px 0 0;">Rural classrooms and long-distance running — the two things that keep me honest.</p>
+
+        <div style="display: flex; flex-wrap: wrap; gap: 20px; margin-top: 56px;">
+          <div data-reveal="up" style="flex: 3 1 420px; min-width: 0; padding: 18px 18px 34px; border-radius: 72px 72px 72px 18px; background: var(--color-accent-2-800); display: flex; flex-direction: column; gap: 14px;">
+            <div style="height: 320px; border-radius: 56px 56px 56px 14px; overflow: hidden;"><image-slot id="comm-ngo" class="washed" shape="rect" src="images/ngo.jpg" placeholder="NGO volunteering" style="width: 100%; height: 100%;"></image-slot></div>
+            <div style="padding: 10px 18px 0; display: flex; flex-direction: column; gap: 12px;">
+              <span style="font-size: 13px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-accent-2-300);">NGO · 3 years</span>
+              <h3 style="font-family: var(--font-heading); font-size: 30px; line-height: 1.1; margin: 0; color: var(--color-accent-2-100);">Rural Education Volunteering</h3>
+              <p style="font-size: 16px; line-height: 1.6; color: var(--color-accent-2-200); margin: 0; max-width: 56ch; text-wrap: pretty;">Assessed learning levels of rural school children and shared the data with government bodies. Stayed with students for days in remote areas — tutoring, easing stage fear, and making room for singing and dancing. Several months each year, three years running.</p>
+            </div>
+          </div>
+          <div data-reveal="up" data-delay="120" style="flex: 2 1 300px; min-width: 0; padding: 18px 18px 34px; border-radius: 18px 72px 72px 72px; background: var(--color-accent-2-800); display: flex; flex-direction: column; gap: 14px;">
+            <div style="height: 320px; border-radius: 14px 56px 56px 56px; overflow: hidden;"><image-slot id="comm-marathon" class="washed" shape="rect" src="images/marathon.jpg" placeholder="Marathon medal" style="width: 100%; height: 100%;"></image-slot></div>
+            <div style="padding: 10px 18px 0; display: flex; flex-direction: column; gap: 12px;">
+              <span style="font-size: 13px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-accent-2-300);">Hobby</span>
+              <h3 style="font-family: var(--font-heading); font-size: 30px; line-height: 1.1; margin: 0; color: var(--color-accent-2-100);">Marathon Running</h3>
+              <p style="font-size: 16px; line-height: 1.6; color: var(--color-accent-2-200); margin: 0; text-wrap: pretty;">Pushing limits physically and mentally — the same endurance software asks for. Keep moving forward.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <svg viewBox="0 0 1440 120" preserveAspectRatio="none" style="display: block; width: 100%; height: 90px; margin-top: -1px;"><path d="M0 0 L 1440 0 L 1440 50 C 1200 120, 960 110, 720 60 S 240 10, 0 70 Z" style="fill: var(--color-accent-2-900);"></path></svg>
+  </section>
+
+  <section id="contact" style="padding: 80px clamp(20px, 4vw, 56px) 40px; scroll-margin-top: 80px;">
+    <div data-reveal="scale" style="max-width: 1240px; margin: 0 auto; position: relative; overflow: hidden; border-radius: 80px; background: var(--color-accent); padding: clamp(40px, 7vw, 96px);">
+      <div data-anim="morph 18s ease-in-out infinite" style="position: absolute; width: 460px; height: 460px; right: -100px; bottom: -160px; background: var(--color-accent-500); border-radius: 58% 42% 55% 45% / 48% 58% 42% 52%; pointer-events: none;"></div>
+      <div data-anim="morph 22s ease-in-out -8s infinite" style="position: absolute; width: 220px; height: 220px; right: 22%; top: -80px; background: var(--color-accent-400); border-radius: 58% 42% 55% 45% / 48% 58% 42% 52%; pointer-events: none;"></div>
+      <div style="position: relative;">
+        <div style="font-size: 14px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-accent-900);">06 · Contact</div>
+        <h2 style="font-family: var(--font-heading); font-size: clamp(52px, 8vw, 128px); line-height: 0.95; letter-spacing: -0.03em; margin: 20px 0 0; color: var(--color-neutral-900); max-width: 11ch;">Let’s build something thoughtful.</h2>
+        <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 14px; margin-top: 44px;">
+          <a href="mailto:practiclemind@gmail.com" style="display: inline-flex; align-items: center; gap: 12px; padding: 18px 30px; border-radius: 999px; background: var(--color-neutral-900); color: var(--color-neutral-100); font-family: var(--font-heading); font-size: 20px; text-decoration: none; transition: transform .4s;" style-hover="transform: scale(1.04); color: var(--color-neutral-100);"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>practiclemind@gmail.com</a>
+          <a href="https://github.com/Nitishdevrani" target="_blank" rel="noopener" aria-label="GitHub" style="width: 64px; height: 64px; border-radius: 50%; border: 2px solid var(--color-neutral-900); color: var(--color-neutral-900); display: grid; place-items: center;" style-hover="background: var(--color-neutral-900); color: var(--color-accent-400);"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg></a>
+          <a href="https://www.linkedin.com/in/nitishdevrani/" target="_blank" rel="noopener" aria-label="LinkedIn" style="width: 64px; height: 64px; border-radius: 50%; border: 2px solid var(--color-neutral-900); color: var(--color-neutral-900); display: grid; place-items: center;" style-hover="background: var(--color-neutral-900); color: var(--color-accent-400);"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg></a>
+        </div>
+      </div>
+    </div>
+    <div style="max-width: 1240px; margin: 36px auto 0; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; font-size: 14px; color: var(--color-neutral-400); padding: 0 12px;">
+      <span>© 2026 Nitish Devrani · Nuremberg</span>
+      <a href="#top" style="color: var(--color-neutral-300); text-decoration: none;" style-hover="color: var(--color-accent-400);">Back to top ↑</a>
+    </div>
+  </section>
+
+  <sc-if value="{{ isOpen }}" hint-placeholder-val="{{ false }}">
+    <div ref="{{ detailRef }}" role="dialog" aria-modal="true" aria-label="{{ d.title }}" style="position: fixed; inset: 0; z-index: 100; overflow-y: auto; overflow-x: clip; overscroll-behavior: contain; background: var(--color-neutral-900); color: var(--color-neutral-100); font-family: var(--font-body);">
+      <div style="position: absolute; width: 640px; height: 640px; right: -180px; top: -200px; border-radius: 58% 42% 55% 45% / 48% 58% 42% 52%; background: radial-gradient(circle, color-mix(in srgb, var(--color-accent) 30%, transparent), transparent 68%); filter: blur(30px); pointer-events: none;"></div>
+      <div style="position: sticky; top: 16px; z-index: 5; display: flex; justify-content: center; padding: 16px clamp(16px, 4vw, 56px) 0;">
+        <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap; width: min(100%, 1240px); padding: 8px; border-radius: 999px; background: color-mix(in srgb, var(--color-neutral-900) 72%, transparent); backdrop-filter: blur(18px); -webkit-backdrop-filter: blur(18px); border: 1px solid color-mix(in srgb, var(--color-neutral-100) 10%, transparent); box-sizing: border-box;">
+          <button type="button" onClick="{{ close }}" style="display: inline-flex; align-items: center; gap: 10px; padding: 12px 22px 12px 16px; border-radius: 999px; border: 0; background: var(--color-neutral-100); color: var(--color-neutral-900); font-family: var(--font-body); font-size: 15px; font-weight: 700; cursor: pointer;" style-hover="background: var(--color-accent-300);"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"><path d="m12 19-7-7 7-7"></path><path d="M19 12H5"></path></svg>Back to portfolio</button>
+          <span style="margin-left: 8px; font-size: 13px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-neutral-400);">{{ d.section }}</span>
+          <button type="button" onClick="{{ next.open }}" style="margin-left: auto; display: inline-flex; align-items: center; gap: 10px; padding: 12px 16px 12px 22px; border-radius: 999px; border: 1px solid color-mix(in srgb, var(--color-neutral-100) 16%, transparent); background: transparent; color: var(--color-neutral-100); font-family: var(--font-body); font-size: 15px; font-weight: 600; cursor: pointer;" style-hover="border-color: var(--color-accent-400); color: var(--color-accent-300);">Next: {{ next.title }}<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></button>
+        </div>
+      </div>
+
+      <div style="position: relative; max-width: 1240px; margin: 0 auto; padding: 64px clamp(20px, 4vw, 56px) 120px;">
+        <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+          <sc-for list="{{ d.tags }}" as="t" hint-placeholder-count="2">
+            <span style="padding: 7px 16px; border-radius: 999px; font-size: 14px; font-weight: 600; background: color-mix(in srgb, var(--color-accent) 18%, transparent); color: var(--color-accent-300);">{{ t }}</span>
+          </sc-for>
+        </div>
+        <h1 style="font-family: var(--font-heading); font-size: clamp(48px, 7vw, 104px); line-height: 0.95; letter-spacing: -0.03em; margin: 24px 0 0; max-width: 16ch; text-wrap: balance;">{{ d.title }}</h1>
+        <p style="font-family: var(--font-heading); font-size: clamp(22px, 2.4vw, 30px); line-height: 1.25; color: var(--color-accent-400); margin: 24px 0 0; max-width: 34ch; text-wrap: pretty;">{{ d.lead }}</p>
+
+        <div class="washed" style="margin-top: 48px; height: clamp(280px, 46vw, 560px); border-radius: 64px 64px 64px 20px; overflow: hidden; background: var(--color-neutral-800);">
+          {{ d.coverImg }}
+        </div>
+
+        <div style="display: flex; flex-wrap: wrap; gap: 48px 64px; margin-top: 72px; align-items: flex-start;">
+          <div style="flex: 2 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 64px;">
+            <div style="display: flex; flex-direction: column; gap: 18px;">
+              <h2 style="font-family: var(--font-heading); font-size: 30px; line-height: 1.1; margin: 0; color: var(--color-neutral-100);">About this {{ d.noun }}</h2>
+              <p style="font-size: 18px; line-height: 1.75; color: var(--color-neutral-300); margin: 0; max-width: 64ch; text-wrap: pretty;">{{ d.about }}</p>
+              <sc-if value="{{ d.deprecated }}"><span style="align-self: flex-start; padding: 7px 16px; border-radius: 999px; font-size: 14px; font-weight: 600; background: color-mix(in srgb, var(--color-accent-2-500) 22%, transparent); color: var(--color-accent-2-200);">This project is now deprecated</span></sc-if>
+            </div>
+
+            <sc-if value="{{ d.hasTasks }}">
+              <div style="display: flex; flex-direction: column; gap: 18px;">
+                <h2 style="font-family: var(--font-heading); font-size: 30px; line-height: 1.1; margin: 0; color: var(--color-neutral-100);">Key contributions</h2>
+                <div style="display: flex; flex-direction: column; gap: 12px;">
+                  <sc-for list="{{ d.tasks }}" as="task" hint-placeholder-count="3">
+                    <div style="display: grid; grid-template-columns: 52px minmax(0, 1fr); gap: 18px; align-items: center; padding: 14px 28px 14px 14px; border-radius: 999px; background: var(--color-surface);">
+                      <span style="width: 52px; height: 52px; border-radius: 50%; background: var(--color-accent-2-700); color: var(--color-accent-2-100); display: grid; place-items: center; font-family: var(--font-heading); font-size: 18px;">{{ task.n }}</span>
+                      <span style="font-size: 16.5px; line-height: 1.5; color: var(--color-neutral-200);">{{ task.text }}</span>
+                    </div>
+                  </sc-for>
+                </div>
+              </div>
+            </sc-if>
+
+            <sc-if value="{{ d.hasGallery }}">
+              <div style="display: flex; flex-direction: column; gap: 18px;">
+                <h2 style="font-family: var(--font-heading); font-size: 30px; line-height: 1.1; margin: 0; color: var(--color-neutral-100);">Gallery</h2>
+                <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 16px;">
+                  <sc-for list="{{ d.gallery }}" as="g" hint-placeholder-count="2">
+                    <a href="{{ g.src }}" target="_blank" rel="noopener" class="washed" style="display: block; aspect-ratio: 4 / 3; border-radius: 40px; overflow: hidden; background: var(--color-neutral-800); transition: transform .5s cubic-bezier(.2,.7,.2,1);" style-hover="transform: scale(1.03);">{{ g.img }}</a>
+                  </sc-for>
+                </div>
+              </div>
+            </sc-if>
+
+            <sc-if value="{{ d.hasDocs }}">
+              <div style="display: flex; flex-direction: column; gap: 18px;">
+                <h2 style="font-family: var(--font-heading); font-size: 30px; line-height: 1.1; margin: 0; color: var(--color-neutral-100);">{{ d.docsTitle }}</h2>
+                <sc-for list="{{ d.docs }}" as="doc" hint-placeholder-count="1">
+                  <div style="display: flex; flex-direction: column; gap: 14px; padding: 14px; border-radius: 48px; background: var(--color-surface);">
+                    {{ doc.frame }}
+                    <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; padding: 4px 8px 6px 18px;">
+                      <span style="font-size: 15px; font-weight: 600; color: var(--color-neutral-300);">{{ doc.name }}</span>
+                      <a href="{{ doc.src }}" target="_blank" rel="noopener" class="btn btn-primary" style="padding: 12px 22px; font-size: 15px;">Open PDF<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a>
+                    </div>
+                  </div>
+                </sc-for>
+              </div>
+            </sc-if>
+          </div>
+
+          <aside style="flex: 1 1 300px; min-width: 0; position: sticky; top: 120px; display: flex; flex-direction: column; gap: 16px;">
+            <div style="padding: 32px; border-radius: 48px 48px 48px 16px; background: var(--color-accent-2-900); display: flex; flex-direction: column; gap: 22px;">
+              <sc-for list="{{ d.meta }}" as="m" hint-placeholder-count="2">
+                <div style="display: flex; flex-direction: column; gap: 4px;">
+                  <span style="font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-accent-2-300);">{{ m.k }}</span>
+                  <span style="font-family: var(--font-heading); font-size: 20px; line-height: 1.25; color: var(--color-accent-2-100);">{{ m.v }}</span>
+                </div>
+              </sc-for>
+              <sc-if value="{{ d.hasStack }}">
+                <div style="display: flex; flex-direction: column; gap: 10px;">
+                  <span style="font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-accent-2-300);">Tech stack</span>
+                  <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+                    <sc-for list="{{ d.stack }}" as="s" hint-placeholder-count="3">
+                      <span style="padding: 7px 16px; border-radius: 999px; font-size: 14px; font-weight: 600; background: color-mix(in srgb, var(--color-accent-2-400) 22%, transparent); color: var(--color-accent-2-100);">{{ s }}</span>
+                    </sc-for>
+                  </div>
+                </div>
+              </sc-if>
+            </div>
+            <sc-if value="{{ d.hasUrl }}">
+              <a href="{{ d.url }}" target="_blank" rel="noopener" class="btn btn-primary btn-block" style="padding: 18px 28px; font-size: 17px;">{{ d.urlLabel }}<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a>
+            </sc-if>
+          </aside>
+        </div>
+      </div>
+    </div>
+  </sc-if>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;heroShape&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;blob&quot;,&quot;arch&quot;,&quot;circle&quot;],&quot;default&quot;:&quot;blob&quot;,&quot;tsType&quot;:&quot;'blob'|'arch'|'circle'&quot;,&quot;section&quot;:&quot;Hero&quot;},&quot;motion&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Motion&quot;}}">
+
+const DETAILS = {
+  vlm: { section: 'Project', noun: 'project', title: 'VLM on Edge Devices', tags: ['Computer Vision', 'Python / PyTorch'], lead: 'Optimize vision-language models to run efficiently on resource-constrained edge hardware.', cover: 'images/vlm-cover.png', about: 'Researching ultra-low-bit quantization (2-bit and 4-bit) techniques for deploying Vision-Language Models like CLIP ViT-B/32 on edge devices. Starting from a baseline of 151.3M parameters at 577 MB FP32 with 86.16% zero-shot accuracy on CIFAR-10, the project explores PTQ, QAT, GPTQ/AWQ, and data-free quantization methods. A comprehensive literature review covers 7 key papers including SPEED-Q, D4C, VLMQ, ParetoQ, and TesseraQ, with a roadmap progressing from CLIP to Qwen-VL and LLaVA deployment.', meta: [{ k: 'Field', v: 'Computer Vision' }, { k: 'Baseline', v: 'CLIP ViT-B/32 · 577 MB FP32' }, { k: 'Zero-shot', v: '86.16% on CIFAR-10' }], stack: ['Python', 'PyTorch', 'CLIP', 'GPTQ / AWQ'], docsTitle: 'Related documents', docs: [{ name: 'Project Abstract — VLM on Edge Devices', src: 'docs/vlm-abstract.pdf' }] },
+  agent: { section: 'Project', noun: 'project', title: 'Multimodal AI Agent', tags: ['AI / ML', 'Python'], lead: 'A foundation-model agent that understands text and image inputs simultaneously.', cover: 'images/agent-cover.png', about: 'Developed an LLM-powered autonomous agent that navigates MiniGrid environments using GPT as a decision backbone. The agent maintains a persistent memory map of explored cells, uses a custom prompt-engineering pipeline to convert 7×7 grid observations into text descriptions, and employs heuristic shortcuts (initial scanning, stuck detection, key-drop sequences) to solve multi-room puzzles requiring door unlocking, object manipulation, and spatial reasoning. The system tracks API usage and supports configurable LLM backends.', meta: [{ k: 'Field', v: 'AI / ML' }, { k: 'Environment', v: 'MiniGrid' }, { k: 'Backbone', v: 'GPT, configurable' }], stack: ['Python', 'GPT', 'Prompt engineering'], gallery: ['images/agent-map.png'], docsTitle: 'Related documents', docs: [{ name: 'Multimodal Foundation Models', src: 'docs/multimodal-foundation-models.pdf' }] },
+  stream: { section: 'Project', noun: 'project', title: 'Stream Data Pipeline Dashboard', tags: ['Real-Time Analytics', 'Next.js / Kafka / WebSockets'], lead: 'A real-time dashboard that streams and visualizes Kafka topic data using WebSocket updates.', cover: 'images/stream.png', about: 'Developed a real-time streaming dashboard that connects Kafka-processed data to a Next.js frontend over WebSockets. The system provides live query metrics, user-specific insights, and alerting-oriented visualization for continuous monitoring.', meta: [{ k: 'Field', v: 'Real-Time Analytics' }, { k: 'Transport', v: 'Kafka → WebSockets' }], stack: ['Next.js', 'Kafka', 'WebSockets', 'Node.js', 'Docker'], tasks: ['Built the real-time frontend dashboard for streaming data visualization.', 'Integrated Kafka-backed data flow with WebSocket-based live updates.', 'Implemented monitoring features including query insights and alert-centric metrics.'], gallery: ['images/stream-1.png', 'images/stream-2.png', 'images/stream-3.png'], url: 'https://github.com/Nitishdevrani/Realtime_DataPipeline_Dashboard', urlLabel: 'View on GitHub' },
+  petco: { section: 'Project', noun: 'project', title: 'Petco Website', tags: ['E-Commerce', 'Next.js / TypeScript'], lead: 'Building and optimizing high-traffic e-commerce experiences across PDP, PLP, brand pages and homepage modules.', cover: 'images/petco.png', about: 'Contributed to building, upgrading, and maintaining core customer-facing shopping experiences for Petco, focusing on Product Detail Pages, Product Listing Pages, Brand Pages, and Homepage delivery with SEO improvements.', meta: [{ k: 'Role', v: 'Frontend Developer' }, { k: 'Period', v: 'Nov 2023 — Aug 2025' }], stack: ['Next.js', 'TypeScript'], tasks: ['Created and upgraded PDP, PLP, Brand Pages, and Homepage modules.', 'Maintained production storefront components in a large e-commerce environment.', 'Improved discoverability and performance through SEO enhancements.'], url: 'https://www.petco.com/shop/en/petcostore', urlLabel: 'Open live site' },
+  pub_vlm: { section: 'Research', noun: 'paper', title: 'Project Abstract: VLM on Edge Devices', tags: ['Edge Computing'], lead: 'The abstract behind the edge-quantization project — scope, baseline and roadmap.', cover: 'images/vlm.png', about: 'Project abstract for deploying vision-language models on resource-constrained edge hardware through ultra-low-bit quantization, from a CLIP baseline toward Qwen-VL and LLaVA.', meta: [{ k: 'Topic', v: 'Edge Computing' }, { k: 'Author', v: 'Nitish Devrani' }], docsTitle: 'Read the paper', docs: [{ name: 'Project Abstract_Nitish_Devrani.pdf', src: 'docs/vlm-abstract.pdf' }] },
+  pub_mm: { section: 'Research', noun: 'paper', title: 'Multimodal Foundation Models', tags: ['Core AI'], lead: 'How foundation models learn from text and images together.', cover: 'images/agent.png', about: 'A report on multimodal foundation models, written alongside the Multimodal AI Agent project.', meta: [{ k: 'Topic', v: 'Core AI' }, { k: 'Author', v: 'Nitish Devrani' }], docsTitle: 'Read the paper', docs: [{ name: 'Multimodal_foundation_models.pdf', src: 'docs/multimodal-foundation-models.pdf' }] },
+  pub_bias: { section: 'Research', noun: 'paper', title: 'Bias in AI', tags: ['AI Ethics'], lead: 'Where bias enters AI systems, and what it costs.', cover: 'images/bias-cover.png', about: 'An essay on bias in AI systems.', meta: [{ k: 'Topic', v: 'AI Ethics' }, { k: 'Author', v: 'Nitish Devrani' }], docsTitle: 'Read the paper', docs: [{ name: 'Bias_in_AI.pdf', src: 'docs/bias-in-ai.pdf' }] },
+  pub_phil: { section: 'Research', noun: 'paper', title: 'Philosophy in AI', tags: ['AI Ethics'], lead: 'The philosophical questions underneath intelligent machines.', cover: 'images/philosophy-cover.png', about: 'An essay on philosophy in AI.', meta: [{ k: 'Topic', v: 'AI Ethics' }, { k: 'Author', v: 'Nitish Devrani' }], docsTitle: 'Read the paper', docs: [{ name: 'Philosophy_in_AI.pdf', src: 'docs/philosophy-in-ai.pdf' }] }
+};
+const ORDER = { Project: ['vlm', 'agent', 'stream', 'petco'], Research: ['pub_vlm', 'pub_mm', 'pub_bias', 'pub_phil'] };
+class Component extends DCLogic {
+  rootRef = React.createRef();
+  detailRef = React.createRef();
+  state = { open: null };
+  openItem(key) {
+    this.setState({ open: key });
+  }
+  closeItem() { this.setState({ open: null }); }
+
+  componentDidMount() {
+    this.onScroll = () => {
+      if (this.raf) return;
+      this.raf = requestAnimationFrame(() => { this.raf = null; this.update(); });
+    };
+    window.addEventListener('scroll', this.onScroll, { passive: true, capture: true });
+    window.addEventListener('resize', this.onScroll);
+    setTimeout(() => { this.applyMotion(); this.update(); }, 30);
+    this.onKey = e => { if (e.key === 'Escape' && this.state.open) this.closeItem(); };
+    window.addEventListener('keydown', this.onKey);
+  }
+  componentDidUpdate(pp, ps) {
+    if (this._lastOpen !== this.state.open) {
+      this._lastOpen = this.state.open;
+      document.body.style.overflow = this.state.open ? 'hidden' : '';
+      const el = this.detailRef.current;
+      if (el && this.state.open) {
+        el.scrollTop = 0;
+        if (this.motionOn()) el.animate([{ opacity: 0, transform: 'translateY(40px)' }, { opacity: 1, transform: 'none' }], { duration: 550, easing: 'cubic-bezier(.2,.7,.2,1)' });
+      }
+    }
+    if (pp.motion !== this.props.motion || pp.heroShape !== this.props.heroShape) setTimeout(() => this.applyMotion(), 30);
+  }
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.onScroll, { capture: true });
+    window.removeEventListener('resize', this.onScroll);
+    this.io && this.io.disconnect();
+    window.removeEventListener('keydown', this.onKey);
+    document.body.style.overflow = '';
+  }
+  motionOn() {
+    const reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+    return (this.props.motion ?? true) && !reduce;
+  }
+  applyMotion() {
+    const root = this.rootRef.current;
+    if (!root) return;
+    const on = this.motionOn();
+    root.querySelectorAll('[data-anim]').forEach(el => { el.style.animation = on ? el.dataset.anim : 'none'; });
+    this.io && this.io.disconnect();
+    const els = root.querySelectorAll('[data-reveal]');
+    if (!on) {
+      els.forEach(el => { el.style.opacity = ''; el.style.transform = ''; el.style.transition = ''; });
+      return;
+    }
+    this.io = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (!e.isIntersecting) return;
+        e.target.style.opacity = '1';
+        e.target.style.transform = 'none';
+        this.io.unobserve(e.target);
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -6% 0px' });
+    els.forEach(el => {
+      if (el.dataset.done) return;
+      el.dataset.done = '1';
+      const d = +(el.dataset.delay || 0);
+      const kind = el.dataset.reveal;
+      el.style.opacity = '0';
+      el.style.transform = kind === 'left' ? 'translateX(-70px)' : kind === 'scale' ? 'scale(.9)' : 'translateY(60px)';
+      el.style.transition = `opacity .9s cubic-bezier(.2,.7,.2,1) ${d}ms, transform 1.2s cubic-bezier(.2,.7,.2,1) ${d}ms`;
+      this.io.observe(el);
+    });
+  }
+  update() {
+    const root = this.rootRef.current;
+    if (!root) return;
+    const clamp = v => Math.max(0, Math.min(1, v));
+    const vh = window.innerHeight;
+    const on = this.motionOn();
+    const hero = root.querySelector('[data-sec="hero"]');
+    if (hero) {
+      const r = hero.getBoundingClientRect();
+      root.style.setProperty('--hp', on ? clamp(-r.top / Math.max(r.height, 1)).toFixed(4) : '0');
+    }
+    const track = root.querySelector('[data-track="exp"]');
+    if (track) {
+      const r = track.getBoundingClientRect();
+      root.style.setProperty('--xp', clamp((vh * 0.6 - r.top) / Math.max(r.height, 1)).toFixed(4));
+    }
+    const se = document.scrollingElement || document.documentElement;
+    const max = se.scrollHeight - se.clientHeight;
+    root.style.setProperty('--sp', max > 0 ? clamp(se.scrollTop / max).toFixed(4) : '0');
+  }
+
+  renderVals() {
+    const shape = this.props.heroShape ?? 'blob';
+    const raw = DETAILS[this.state.open] || DETAILS.vlm;
+    const dv = Object.assign({}, raw, {
+      tasks: (raw.tasks || []).map((t, i) => ({ n: String(i + 1).padStart(2, '0'), text: t })),
+      coverImg: React.createElement('img', { key: raw.cover, src: raw.cover, alt: raw.title, style: { width: '100%', height: '100%', objectFit: 'cover', display: 'block' } }),
+      gallery: (raw.gallery || []).map(src => ({ src, img: React.createElement('img', { key: src, src, alt: '', style: { width: '100%', height: '100%', objectFit: 'cover', display: 'block' } }) })),
+      docs: (raw.docs || []).map(d => Object.assign({}, d, { frame: React.createElement('iframe', { key: d.src, src: d.src, title: d.name, style: { width: '100%', height: 720, border: 0, borderRadius: 36, background: 'var(--color-neutral-100)', display: 'block' } }) })), stack: raw.stack || [], meta: raw.meta || [],
+      hasTasks: !!(raw.tasks && raw.tasks.length), hasGallery: !!(raw.gallery && raw.gallery.length), hasDocs: !!(raw.docs && raw.docs.length), hasStack: !!(raw.stack && raw.stack.length), hasUrl: !!raw.url, deprecated: !!raw.deprecated
+    });
+    const list = ORDER[raw.section], nk = list[(list.indexOf(this.state.open) + 1) % list.length];
+    const nx = { title: DETAILS[nk].title, open: () => this.openItem(nk) };
+    const pubKeys = ORDER.Research;
+    const skills = ['Next.js', 'React', 'TypeScript', 'Node.js', 'Python', 'Machine Learning', 'Deep Learning', 'Model fine-tuning', 'Data Engineering', 'Docker', '3D Modeling'];
+    return {
+      rootRef: this.rootRef,
+      detailRef: this.detailRef,
+      isOpen: !!this.state.open,
+      d: dv,
+      next: nx,
+      close: () => this.closeItem(),
+      openP0: e => { e.preventDefault(); this.openItem('vlm'); },
+      openP1: e => { e.preventDefault(); this.openItem('agent'); },
+      openP2: e => { e.preventDefault(); this.openItem('stream'); },
+      openP3: e => { e.preventDefault(); this.openItem('petco'); },
+      isBlob: shape === 'blob',
+      isArch: shape === 'arch',
+      isCircle: shape === 'circle',
+      marquee: skills.concat(skills),
+      onHeroMove: e => {
+        const el = e.currentTarget, r = el.getBoundingClientRect();
+        el.style.setProperty('--mx', (e.clientX - r.left) + 'px');
+        el.style.setProperty('--my', (e.clientY - r.top) + 'px');
+      },
+      experience: [
+        { yr: '25', period: 'Sep 2025 — Now', role: 'Hiwi (Research Assistant)', org: 'UTN', place: 'Nuremberg', current: true, body: 'Research-support and university initiatives — implementation, testing and iteration. Architected the German University Learning Review web app end-to-end.', tags: ['React', 'Node.js', 'MongoDB'] },
+        { yr: '23', period: 'Nov 2023 — Aug 2025', role: 'Frontend Developer', org: 'Petco', place: 'Remote', current: false, body: 'Created, upgraded and maintained PDP, PLP, brand pages and homepage experiences, with SEO improvements for high-traffic storefront pages.', tags: ['Next.js', 'TypeScript', 'SEO'] },
+        { yr: '22', period: 'Mar 2022 — Nov 2023', role: 'Software Engineer', org: 'Kellton', place: 'Gurugram', current: false, body: 'Built the merchant-facing sampling frontend for Adani One — responsive, accessible React components, REST integrations and PWA capabilities.', tags: ['React.js', 'Redux', 'PWA'] },
+        { yr: '20', period: 'Jan 2020 — Mar 2022', role: 'Sr. Associate Consultant', org: 'Oodles Technologies', place: 'Gurugram', current: false, body: 'Led a five-person team on Babyflix live streaming. Migrated a legacy PHP platform to React.js and mentored junior developers.', tags: ['Live streaming', 'PHP → React', 'Team lead'] }
+      ],
+      pubs: [
+        { n: '01', title: 'Project Abstract: VLM on Edge Devices', authors: 'N. Devrani', venue: 'Edge Computing', open: e => { e.preventDefault(); this.openItem(pubKeys[0]); } },
+        { n: '02', title: 'Multimodal Foundation Models', authors: 'N. Devrani', venue: 'Core AI', open: e => { e.preventDefault(); this.openItem(pubKeys[1]); } },
+        { n: '03', title: 'Bias in AI', authors: 'N. Devrani', venue: 'AI Ethics', open: e => { e.preventDefault(); this.openItem(pubKeys[2]); } },
+        { n: '04', title: 'Philosophy in AI', authors: 'N. Devrani', venue: 'AI Ethics', open: e => { e.preventDefault(); this.openItem(pubKeys[3]); } }
+      ]
+    };
+  }
+}
+</script>
+</body>
+</html>

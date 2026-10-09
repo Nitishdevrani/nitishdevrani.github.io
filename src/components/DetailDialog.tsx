@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react';
 import { ArrowLeft, ArrowUpRight, ArrowRight } from 'lucide-react';
 import { ModelViewer } from './ModelViewer';
+import { ImageStreamHero } from './ui/image-stream-hero';
 import { detailItems, nextDetail } from '../data/content';
 
 export function DetailDialog({ id, onClose, onNext, standalone = false }: { id: string; onClose: () => void; onNext: (id: string) => void; standalone?: boolean }) {
@@ -38,7 +39,7 @@ export function DetailDialog({ id, onClose, onNext, standalone = false }: { id: 
         <p className="exp-eyebrow">{item.tags.join(' / ')}</p>
         <h1 id="exp-detail-title">{item.title}</h1>
         <p className="exp-detail-lead">{item.lead}</p>
-        <img className="exp-detail-cover" src={item.cover} alt={item.title} />
+        {item.imageStream ? <ImageStreamHero images={item.gallery.map(src => ({ src }))} cards={Math.max(9, item.gallery.length)} speed={24} /> : <img className="exp-detail-cover" src={item.cover} alt={item.title} />}
         <h2>About this {item.noun}</h2><p>{item.about}</p>
         {item.deprecated && <p>This project is now deprecated.</p>}
         {!!item.meta.length && <dl>{item.meta.map(({ k, v }) => <div key={k}><dt>{k}</dt><dd>{v}</dd></div>)}</dl>}

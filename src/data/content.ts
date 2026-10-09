@@ -28,6 +28,7 @@ export type Project = {
   techStack?: string[];
   tasks?: string[];
   galleryImages?: string[];
+  imageStream?: boolean;
   papers?: string[];
   paperNames?: string[];
   models?: string[];
@@ -81,6 +82,7 @@ export type DetailItem = {
   stack: string[];
   tasks: string[];
   gallery: string[];
+  imageStream?: boolean;
   subprojects: Subproject[];
   models: { name: string; src: string; fileName: string }[];
   docsTitle: string;
@@ -137,7 +139,8 @@ const projectDetail = (p: Project): DetailItem => {
     meta: p.meta ?? [],
     stack: p.techStack ?? [],
     tasks: p.tasks ?? [],
-    gallery: (p.galleryImages ?? []).filter((src) => src !== cover),
+    gallery: (p.galleryImages ?? []).filter((src) => p.imageStream || src !== cover),
+    imageStream: p.imageStream,
     subprojects: p.subprojects ?? [],
     models: modelProjects.flatMap(project => project.modelsBasePath ? (project.models ?? []).map(name => ({
       name: `${project.id !== p.id ? `${project.title} · ` : ''}${name.replace(/\.stl$/i, '').replace(/-/g, ' ')}`,

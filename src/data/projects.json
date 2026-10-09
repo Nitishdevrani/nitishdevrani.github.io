@@ -456,8 +456,8 @@
         "id": "3d_models",
         "subprojects": [
             {
-                "title": "Spoon Drainer",
-                "description": "From CAD model to 3D-printed object: a spoon drainer shown in its digital and physical forms.",
+                "title": "Dish Sponge Drainer",
+                "description": "From CAD model to 3D-printed object: a dish sponge drainer shown in its digital and physical forms.",
                 "videos": [
                     {
                         "src": "/assets/3D/Spone-drainer-cad.mp4",
@@ -490,24 +490,6 @@
                         "caption": "Custom Letter · View 4"
                     }
                 ]
-            },
-            {
-                "title": "Toilet-Seat Opener",
-                "description": "A toilet-seat opener design showcased in three videos.",
-                "videos": [
-                    {
-                        "src": "/assets/3D/Seat-Lifter-1.mp4",
-                        "caption": "Toilet-Seat Opener · View 1"
-                    },
-                    {
-                        "src": "/assets/3D/Seat-Lifter-2.mp4",
-                        "caption": "Toilet-Seat Opener · View 2"
-                    },
-                    {
-                        "src": "/assets/3D/Seat-Lifter-3.mp4",
-                        "caption": "Toilet-Seat Opener · View 3"
-                    }
-                ]
             }
         ],
         "title": "3D Modeling & Printing",
@@ -528,5 +510,31 @@
             "Wiper Fix.stl"
         ],
         "modelsBasePath": "/data/3d_models"
+    },
+    {
+        "id": "car_design_collection",
+        "title": "Car Design Collection",
+        "skill": "Automotive Sketching",
+        "language": "Hand Drawing",
+        "objective": "A collection of hand-drawn car designs and studies.",
+        "description": "Twelve car sketches exploring body shapes, proportions and perspective, drawn by hand. Browse the collection below to see each drawing in full.",
+        "imagePath": "/data/Cars/IMG_20171211_192102_HDR.jpg",
+        "category": "3d_designing",
+        "imageStream": true,
+        "galleryImages": [
+            "/data/Cars/IMG_20171211_192102_HDR.jpg",
+            "/data/Cars/IMG_20171213_182143.jpg",
+            "/data/Cars/IMG_20171219_173836_HDR.jpg",
+            "/data/Cars/IMG_20171221_090232.jpg",
+            "/data/Cars/IMG_20171223_174911_HDR.jpg",
+            "/data/Cars/IMG_20180203_170936.jpg",
+            "/data/Cars/IMG_20180203_210039.jpg",
+            "/data/Cars/IMG_20180203_210219.jpg",
+            "/data/Cars/IMG_20180217_171341.jpg",
+            "/data/Cars/IMG_20180221_174150.jpg",
+            "/data/Cars/IMG_20180224_164700.jpg",
+            "/data/Cars/IMG_20180310_185629.jpg"
+        ],
+        "papers": []
     }
 ]
