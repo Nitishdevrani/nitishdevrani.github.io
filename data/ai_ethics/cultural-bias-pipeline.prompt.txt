@@ -1,0 +1,3 @@
+Generated using the built-in image generation tool.
+
+Create a plain minimal academic research diagram as a landscape 3:2 portfolio thumbnail. Pure white background, thin black rectangular outlines and arrows, regular black sans-serif type, no colors, icons, shadows, gradients, illustrations or decorative detail. Modest title 'Cultural bias in LLMs'. Centered flow: one box 'Cultural prompts' pointing to one box 'LLM responses', then split into two parallel stacked boxes 'LLM judges' and 'Human review', with both pointing to a final box 'Compare judgments'. Clean unambiguous arrow directions, generous white margins, readable large short labels. One small footer '30 prompts · 330 responses'. Nothing else. Balanced simple research-paper schematic.

@@ -5,9 +5,9 @@
         "current": true,
         "role": "Hiwi (Research Assistant)",
         "org": "UTN",
-        "place": "Nuremberg",
-        "body": "Research-support and university initiatives — implementation, testing and iteration. Architected the German University Learning Review web app end-to-end.",
-        "tags": ["React", "Node.js", "MongoDB"]
+        "place": "Nuremberg, Germany",
+        "body": "Developed Multibot and other AI-powered tools with RAG implementation. Architected the Universities Learning Companion web app end-to-end.",
+        "tags": ["Solo Dev", "RAG", "LLM", "Multi-Chatbot", "Cybersecurity", "React.js", "REST APIs", "MongoDB", "Cloud", "CI/CD", "Git"]
     },
     {
         "yr": "23",
@@ -15,25 +15,34 @@
         "role": "Frontend Developer",
         "org": "Petco",
         "place": "Remote",
-        "body": "Created, upgraded and maintained PDP, PLP, brand pages and homepage experiences, with SEO improvements for high-traffic storefront pages.",
-        "tags": ["Next.js", "TypeScript", "SEO"]
+        "body": "Created, upgraded and maintained Ecommerce pages. Enhanced their UI/UX. Did SEO improvements for high-traffic storefront pages.",
+        "tags": ["Team Player", "Next.js", "TypeScript", "SEO", "Google Analytics", "REST APIs", "Git"]
     },
     {
         "yr": "22",
         "period": "Mar 2022 — Nov 2023",
         "role": "Software Engineer",
         "org": "Kellton",
-        "place": "Gurugram",
+        "place": "Gurugram, India",
         "body": "Built the merchant-facing sampling frontend for Adani One — responsive, accessible React components, REST integrations and PWA capabilities.",
-        "tags": ["React.js", "Redux", "PWA"]
+        "tags": ["Team Player", "React.js", "Redux", "PWA", "REST APIs", "Git", "Docker", "CI/CD"]
     },
     {
-        "yr": "20",
-        "period": "Jan 2020 — Mar 2022",
+        "yr": "21",
+        "period": "Feb 2021 — Mar 2022",
         "role": "Sr. Associate Consultant",
         "org": "Oodles Technologies",
-        "place": "Gurugram",
-        "body": "Led a five-person team on Babyflix live streaming. Migrated a legacy PHP platform to React.js and mentored junior developers.",
-        "tags": ["Live streaming", "PHP → React", "Team lead"]
+        "place": "Gurugram, India",
+        "body": "Developed Apps for Apple TV Box. Migrated a legacy PHP platform to React.js. Led a team of 4 developers to deliver a live streaming platform.",
+        "tags": ["Team Management","Live streaming", "PHP", "React.js", "React Native", "Vue.js", "Git"]
+    },
+     {
+        "yr": "20",
+        "period": "Jan 2020 — Jan 2021",
+        "role": "Associate Consultant",
+        "org": "Oodles Technologies",
+        "place": "Gurugram, India",
+        "body": "Maintained old Drupal website. Developed new features for a live streaming platform.",
+        "tags": ["Team Player","Live streaming", "PHP", "Drupal", "Git"]
     }
 ]

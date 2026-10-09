@@ -44,7 +44,23 @@ export function DetailDialog({ id, onClose, onNext, standalone = false }: { id: 
         {!!item.meta.length && <dl>{item.meta.map(({ k, v }) => <div key={k}><dt>{k}</dt><dd>{v}</dd></div>)}</dl>}
         {!!item.stack.length && <><h2>Tech stack</h2><p>{item.stack.join(' · ')}</p></>}
         {!!item.tasks.length && <><h2>Key contributions</h2><ul>{item.tasks.map(task => <li key={task}>{task}</li>)}</ul></>}
-        {!!item.gallery.length && <><h2>Gallery</h2><div className="exp-detail-gallery">{item.gallery.map(src => <a href={src} target="_blank" rel="noreferrer" key={src}><img src={src} alt={`${item.title} gallery image`} loading="lazy" /></a>)}</div></>}
+        {!!item.gallery.length && <><h2>Gallery</h2><div className={`exp-detail-gallery${id === 'ai_agent' ? ' exp-detail-gallery-compact' : ''}`}>{item.gallery.map(src => <a href={src} target="_blank" rel="noreferrer" key={src}><img src={src} alt={`${item.title} gallery image`} loading="lazy" /></a>)}</div></>}
+        {!!item.subprojects.length && <><h2 className="exp-subprojects-heading">Subprojects</h2>{item.subprojects.map(project => (
+          <section className="exp-subproject" key={project.title} aria-label={project.title}>
+            <h3>{project.title}</h3>
+            <p>{project.description}</p>
+            <div className={`exp-detail-gallery${project.videos.length === 4 ? ' exp-subproject-gallery-four' : project.videos.length === 3 ? ' exp-subproject-gallery-three' : ''}`}>
+              {project.videos.map(video => (
+                <figure key={video.src}>
+                  <video autoPlay muted loop playsInline preload="metadata" aria-label={`${project.title}: ${video.caption}`}>
+                    <source src={video.src} type="video/mp4" />
+                  </video>
+                  <figcaption>{video.caption}</figcaption>
+                </figure>
+              ))}
+            </div>
+          </section>
+        ))}</>}
         {!!item.models.length && <ModelViewer key={id} models={item.models} />}
         {!!item.docs.length && <><h2>{item.docsTitle}</h2><div className="pdf-previews">{item.docs.map(doc => (
           <section className="pdf-preview" key={doc.src} aria-label={doc.name}>

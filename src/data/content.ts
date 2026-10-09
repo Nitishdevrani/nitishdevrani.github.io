@@ -3,6 +3,11 @@ import publicationsData from './publications.json';
 import experienceData from './experience.json';
 
 export type Meta = { k: string; v: string };
+export type Subproject = {
+  title: string;
+  description: string;
+  videos: { src: string; caption: string }[];
+};
 
 export type Project = {
   id: string;
@@ -27,6 +32,7 @@ export type Project = {
   paperNames?: string[];
   models?: string[];
   modelsBasePath?: string;
+  subprojects?: Subproject[];
   url?: string;
   urlLabel?: string;
   deprecated?: boolean;
@@ -44,6 +50,9 @@ export type Publication = {
   author: string;
   lead: string;
   about: string;
+  documents?: { name: string; src: string }[];
+  meta?: Meta[];
+  tasks?: string[];
 };
 
 export type Job = {
@@ -72,6 +81,7 @@ export type DetailItem = {
   stack: string[];
   tasks: string[];
   gallery: string[];
+  subprojects: Subproject[];
   models: { name: string; src: string; fileName: string }[];
   docsTitle: string;
   docs: { name: string; src: string }[];
@@ -111,6 +121,9 @@ export const experience = experienceData as Job[];
 const projectDetail = (p: Project): DetailItem => {
   const cover = p.cover ?? p.imagePath;
   const papers = p.papers ?? [];
+  const modelProjects = p.id === '3d_models'
+    ? [p, ...projects.filter(project => project.id !== p.id && project.modelsBasePath)]
+    : [p];
   return {
     id: p.id,
     section: 'Project',
@@ -125,11 +138,12 @@ const projectDetail = (p: Project): DetailItem => {
     stack: p.techStack ?? [],
     tasks: p.tasks ?? [],
     gallery: (p.galleryImages ?? []).filter((src) => src !== cover),
-    models: p.modelsBasePath ? (p.models ?? []).map(name => ({
-      name: name.replace(/\.stl$/i, '').replace(/-/g, ' '),
+    subprojects: p.subprojects ?? [],
+    models: modelProjects.flatMap(project => project.modelsBasePath ? (project.models ?? []).map(name => ({
+      name: `${project.id !== p.id ? `${project.title} · ` : ''}${name.replace(/\.stl$/i, '').replace(/-/g, ' ')}`,
       fileName: name,
-      src: `${p.modelsBasePath}/${encodeURIComponent(name)}`,
-    })) : [],
+      src: `${project.modelsBasePath}/${encodeURIComponent(name)}`,
+    })) : []),
     docsTitle: 'Related documents',
     docs: papers.map((src, i) => ({ name: p.paperNames?.[i] ?? fileName(src), src })),
     url: p.url,
@@ -150,13 +164,15 @@ const paperDetail = (p: Publication): DetailItem => ({
   meta: [
     { k: 'Topic', v: p.topic },
     { k: 'Author', v: p.author },
+    ...(p.meta ?? []),
   ],
   stack: [],
-  tasks: [],
+  tasks: p.tasks ?? [],
   gallery: [],
+  subprojects: [],
   models: [],
-  docsTitle: 'Read the paper',
-  docs: [{ name: p.pdfName, src: p.pdfPath }],
+  docsTitle: p.documents ? 'Paper and presentation' : 'Read the paper',
+  docs: p.documents ?? [{ name: p.pdfName, src: p.pdfPath }],
 });
 
 const projectDetails = projects.map(projectDetail);

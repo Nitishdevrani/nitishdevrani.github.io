@@ -5,8 +5,8 @@ export const education = [
 ];
 
 export const community = [
-  { label: 'NGO · 3 years', title: 'Rural Education Volunteering', image: '/images/ai/ngo.jpg', alt: 'Volunteering with rural school children', body: 'Assessed learning levels of rural school children and shared the data with government bodies. Stayed with students for days in remote areas — tutoring, easing stage fear, and making room for singing and dancing. Several months each year, three years running.' },
-  { label: 'Hobby', title: 'Marathon Running', image: '/images/ai/marathon.jpg', alt: 'Nitish with a marathon medal', body: 'Pushing limits physically and mentally — the same endurance software asks for. Keep moving forward.' },
+  { label: 'NGO · 3 years', title: 'Rural Education Volunteering', image: '/images/ai/ngo.jpg', alt: 'Volunteering with rural school children', body: 'Assessed learning levels of rural school children and shared the data with government bodies. Stayed with students for days in remote areas — tutoring, easing stage fear, and making room for singing and dancing. Several months each year.' },
+  { label: 'Hobby', title: 'Marathon Running', image: '/images/ai/marathon.jpg', alt: 'Nitish with a marathon medal', body: 'Pushing limits physically and mentally.' },
 ];
 
 export const portfolioCommunity = [

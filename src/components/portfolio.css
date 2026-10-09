@@ -43,6 +43,10 @@
 .exp-jobs { margin-top: 36px; }
 .exp-jobs article { padding: 30px 0; border-top: 1px solid #ffffff26; }
 .exp-jobs article:last-child { padding-bottom: 0; }
+.exp-jobs article.exp-job-connected { position: relative; padding-left: 28px; }
+.exp-jobs article.exp-job-connect-previous { border-top-color: transparent; }
+.exp-job-connected::before { content: ''; position: absolute; top: 35px; left: 0; width: 9px; height: 9px; border-radius: 50%; background: var(--exp-accent, #ffc66d); }
+.exp-job-connect-next::after { content: ''; position: absolute; top: 44px; left: 4px; width: 1px; height: calc(100% - 8px); background: #ffc66d66; }
 .exp-jobs h3 { margin: 12px 0; font-size: clamp(25px, 2.3vw, 32px); letter-spacing: -.035em; }
 .exp-jobs article > p:not(.exp-eyebrow) { font-size: 14px; color: #cecbc1; }
 .exp-jobs .exp-org { margin: 14px 0; color: #fff !important; }
@@ -100,6 +104,20 @@
 .exp-detail-body dd { margin: 6px 0; }
 .exp-detail-gallery { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
 .exp-detail-gallery img { width: 100%; border-radius: 12px; }
+.exp-detail-body .exp-subprojects-heading { font-size: 32px; font-weight: 700; margin: 48px 0 28px; }
+.exp-subproject { margin: 0 0 40px; padding: 28px 0 36px; border-top: 1px solid #ffffff26; }
+.exp-subproject h3 { font-size: 22px; font-weight: 600; line-height: 1.35; color: var(--exp-accent); margin: 0 0 16px; }
+.exp-subproject > p { margin: 0 0 28px; line-height: 1.75; }
+.exp-subproject figure { margin: 0; min-width: 0; }
+.exp-subproject video { display: block; width: 100%; height: auto; max-height: 400px; object-fit: contain; background: #111; border-radius: 12px; }
+.exp-subproject-gallery-four { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.exp-subproject-gallery-three { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+@media (max-width: 700px) { .exp-detail-gallery.exp-subproject-gallery-three { grid-template-columns: 1fr; } }
+@media (max-width: 700px) { .exp-detail-gallery.exp-subproject-gallery-four { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 420px) { .exp-detail-gallery.exp-subproject-gallery-four { grid-template-columns: 1fr; } }
+.exp-subproject figcaption { margin-top: 10px; color: #d0cec4; font-size: 14px; }
+.exp-detail-gallery-compact a { width: 100%; max-width: 300px; justify-self: start; }
+.exp-detail-gallery-compact img { display: block; max-width: 300px; max-height: 300px; object-fit: contain; object-position: left center; }
 .exp-docs a { display: flex; align-items: center; justify-content: space-between; padding: 18px 0; border-bottom: 1px solid #ffffff20; overflow-wrap: anywhere; }
 .exp-detail-body > .exp-button { margin-top: 28px; }
 @media (min-width: 1700px) { .exp-scene-content { padding-right: 8%; padding-left: 56%; } }

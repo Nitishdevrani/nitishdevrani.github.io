@@ -1,12 +1,12 @@
 [
     {
         "id": "ai_agent",
-        "title": "Multimodal AI Agent",
+        "title": "A Memory-Augmented LLM Agent for Open-Ended Navigation in MiniGrid",
         "skill": "AI / ML",
         "language": "Python",
-        "objective": "Build a foundation model capable of understanding text and image inputs simultaneously.",
-        "description": "Developed an LLM-powered autonomous agent that navigates MiniGrid environments using GPT as a decision backbone. The agent maintains a persistent memory map of explored cells, uses a custom prompt-engineering pipeline to convert 7×7 grid observations into text descriptions, and employs heuristic shortcuts (initial scanning, stuck detection, key-drop sequences) to solve multi-room puzzles requiring door unlocking, object manipulation, and spatial reasoning. The system tracks API usage and supports configurable LLM backends.",
-        "imagePath": "/data/AI agent/card.png",
+        "objective": "Improve MiniGrid navigation under partial observability through memory-grounded LLM action selection.",
+        "description": "Developed with Vegim Bytyqi and Pawan Saxena, this project uses gpt-4.1-mini as an action-selection policy for partially observable BabyAI/MiniGrid environments. A Python state layer converts 7×7×3 egocentric observations into compact text, projects visible objects into a persistent spatial map, and tracks visited cells. The LLM receives the mission, local symbolic map, held object and memory-derived subgoal, then selects one discrete action that is validated before execution. An initial 360° scan and repeated-state detection help address looping and wrong-object selection. The paper reports three successful sample runs and one failed run, including both outcomes on UnlockPickup; these examples do not establish an aggregate benchmark success rate. Remaining limitations include pose drift, policy variance and limited long-horizon planning beyond subgoals.",
+        "imagePath": "/data/AI agent/minigrid-agent-pipeline.png",
         "type": "project",
         "category": "ai",
         "papers": [
@@ -14,46 +14,61 @@
         ],
         "featured": true,
         "order": 2,
-        "cover": "/data/AI agent/cover-1.png",
-        "lead": "A foundation-model agent that understands text and image inputs simultaneously.",
+        "cover": "/data/AI agent/minigrid-agent-pipeline.png",
+        "lead": "Grounding an LLM navigation policy in persistent spatial memory, a local symbolic map and structured prompts.",
         "cardTags": [
-            "AI / ML · Python"
+            "LLM Agents",
+            "Python · MiniGrid"
         ],
-        "cardBlurb": "An LLM-driven agent that solves multi-room MiniGrid puzzles — persistent memory map, grid-to-text prompting, stuck detection.",
+        "cardBlurb": "Observe, remember, reason and act: a MiniGrid agent with spatial memory, symbolic maps and validated LLM decisions.",
         "meta": [
             {
-                "k": "Field",
-                "v": "AI / ML"
-            },
-            {
                 "k": "Environment",
-                "v": "MiniGrid"
+                "v": "BabyAI / MiniGrid · 6 baseline tasks"
             },
             {
-                "k": "Backbone",
-                "v": "GPT, configurable"
+                "k": "Policy",
+                "v": "gpt-4.1-mini · Text-based action selection"
+            },
+            {
+                "k": "Authors",
+                "v": "Vegim Bytyqi · Nitish Devrani · Pawan Saxena"
+            },
+            {
+                "k": "Paper",
+                "v": "February 2026"
             }
         ],
         "techStack": [
             "Python",
-            "GPT",
-            "Prompt engineering"
+            "MiniGrid / BabyAI",
+            "gpt-4.1-mini",
+            "Structured prompting",
+            "Spatial memory"
         ],
         "galleryImages": [
             "/data/AI agent/agent_map.png"
         ],
         "paperNames": [
-            "Multimodal Foundation Models"
+            "Full paper — A Memory-Augmented LLM Agent"
+        ],
+        "cardTitle": "Memory-Augmented LLM Agent",
+        "tasks": [
+            "Combined a Python state-and-memory layer with an LLM policy that selects one discrete action per timestep.",
+            "Encoded visible objects, relative offsets, held objects and blocked directions in a stable textual representation.",
+            "Grounded decisions in a local symbolic map and generic subgoals such as reaching a key before unlocking a door.",
+            "Used bootstrap scanning, visited-cell tracking, repeated-state detection and action validation to limit unproductive loops.",
+            "Examined sample runs under runtime and token constraints: successful UnlockPickup, PutNext and KeyInBox episodes took 45, 70 and 50 steps respectively, while a second UnlockPickup run failed."
         ]
     },
     {
         "id": "smart_bike_light",
         "title": "Smart Bike Light Pro",
-        "skill": "Hardware / IoT",
-        "language": "C++ / Hardware C",
-        "objective": "Design an intelligent bike light system responding to environment lighting and motion.",
-        "description": "Engineered a smart bicycle tail light that automatically adjusts brightness based on ambient light conditions and rider motion. The project includes custom 3D-printed enclosures (case caps, cycle holders, mounting nuts) designed in Onshape CAD, assembled with real-world testing on a bicycle. A detailed poster and technical report document the electronics design, sensor integration, power management, and iterative prototyping process.",
-        "imagePath": "/data/smart-bike-light-project/card.png",
+        "skill": "Embedded Vision / Edge AI",
+        "language": "CNN / Raspberry Pi / ESP32",
+        "objective": "Control bicycle headlight beam states from a forward-facing camera using a lightweight neural network.",
+        "description": "Developed at UTN with Sagnik Das and Muhid Abid Siddiqui, in collaboration with Supernova GmbH, Smart Bike Light Pro is a vision-based adaptive headlight prototype. An ESP32-CAM streams MJPEG video over Wi-Fi to a Raspberry Pi 5. A lightweight residual CNN predicts off, dim or high beam, and temporal stabilization smooths transitions before GPIO-driven relay control switches the headlight. The model uses policy-derived BDD100K labels based on time of day and hazard bounding boxes. Custom 3D-printed enclosures and bicycle mounts integrate the hardware for on-bike testing. The report records 93.99% classification accuracy on 18,482 BDD100K test images and 20.4 ms model inference on Raspberry Pi 5, with a 10 Hz control loop. The classification result measures agreement with derived labels, not real-world glare safety. On 255 bike-ride segments, the deployment configuration reports 80.8% dimming recall and a 30.6% false-positive rate; twilight, distant hazards and some single-headlight vehicles remain challenging.",
+        "imagePath": "/data/smart-bike-light-project/paper-enclosure.png",
         "type": "project",
         "category": "ai",
         "papers": [
@@ -71,52 +86,118 @@
             "Part Studio 1 - Botttom.stl",
             "Part Studio 1.stl"
         ],
-        "modelsBasePath": "/data/smart-bike-light-project/3d-models"
+        "modelsBasePath": "/data/smart-bike-light-project/3d-models",
+        "cover": "/data/smart-bike-light-project/paper-enclosure.png",
+        "lead": "Camera-based adaptive headlight control — a lightweight CNN, Raspberry Pi inference and custom bicycle-mounted hardware.",
+        "cardTitle": "Smart Bike Light Pro",
+        "cardBlurb": "A camera-to-headlight pipeline that predicts off, dim and high beam on Raspberry Pi 5, housed in custom 3D-printed enclosures.",
+        "cardTags": [
+            "Embedded Vision",
+            "Raspberry Pi · CNN"
+        ],
+        "meta": [
+            {
+                "k": "Model",
+                "v": "Single residual CNN · 4.2M parameters"
+            },
+            {
+                "k": "Inference",
+                "v": "20.4 ms on Raspberry Pi 5 · 10 Hz control loop"
+            },
+            {
+                "k": "BDD100K test",
+                "v": "93.99% policy-label accuracy · 18,482 images"
+            },
+            {
+                "k": "On-bike evaluation",
+                "v": "255 segments · 80.8% dimming recall · 30.6% FPR"
+            },
+            {
+                "k": "Authors",
+                "v": "Sagnik Das · Muhid Abid Siddiqui · Nitish Devrani"
+            }
+        ],
+        "techStack": [
+            "Residual CNN",
+            "BDD100K",
+            "Raspberry Pi 5",
+            "ESP32-CAM",
+            "MJPEG / Wi-Fi",
+            "GPIO / Relays",
+            "Onshape",
+            "3D Printing"
+        ],
+        "tasks": [
+            "Integrated camera streaming, embedded model inference and relay-based headlight switching into an on-bike prototype.",
+            "Developed a single-model perception pipeline for off, dim and high beam using policy-derived supervision from BDD100K.",
+            "Applied moving-average evidence, dim-state hold time and flicker suppression to stabilize beam transitions.",
+            "Designed and 3D-printed custom enclosures and mounting components for the bicycle hardware.",
+            "Compared model variants and evaluated classification, embedded inference and dimming behavior on recorded bike-ride segments."
+        ],
+        "galleryImages": [
+            "/data/smart-bike-light-project/paper-wiring.png",
+            "/data/smart-bike-light-project/Box_printed.jpeg",
+            "/data/smart-bike-light-project/Box_installed.jpeg"
+        ],
+        "paperNames": [
+            "Project poster — Perception for Smart Bike Lights",
+            "Full report — Perception for Smart Bike Lights"
+        ]
     },
     {
         "id": "vlm_on_edge",
-        "title": "VLM on Edge Devices",
+        "title": "How Far Can You Compress CLIP? A Systematic Study of Pruning and Quantization for Edge Deployment",
         "skill": "Computer Vision",
         "language": "Python / PyTorch",
-        "objective": "Optimize Vision-Language Models to run efficiently on resource-constrained edge hardware.",
-        "description": "Researching ultra-low-bit quantization (2-bit and 4-bit) techniques for deploying Vision-Language Models like CLIP ViT-B/32 on edge devices. Starting from a baseline of 151.3M parameters at 577 MB FP32 with 86.16% zero-shot accuracy on CIFAR-10, the project explores PTQ, QAT, GPTQ/AWQ, and data-free quantization methods. A comprehensive literature review covers 7 key papers including SPEED-Q, D4C, VLMQ, ParetoQ, and TesseraQ, with a roadmap progressing from CLIP to Qwen-VL and LLaVA deployment.",
-        "imagePath": "/data/vlm_on_edge_devices/card.png",
+        "objective": "Map the accuracy and compression trade-offs of pruning and quantization in CLIP-family models for edge deployment.",
+        "description": "A systematic empirical study spanning 300+ experiments on CLIP ViT-B/32, CLIP ViT-B/16 and MobileCLIP-S1. I compared six precision configurations, magnitude and activation-aware Wanda pruning, structured FFN pruning, and EViT token pruning, including both prune-then-quantize and quantize-then-prune orderings. Evaluation covers zero-shot classification on CIFAR-10, CIFAR-100 and STL-10, with additional full-resolution ImageNette validation and three-seed analysis for key configurations. Wanda preserves substantially more accuracy than magnitude pruning on ViT-based CLIP models, while MobileCLIP-S1 is more resilient at high sparsity. Sub-8-bit quantization is simulated: the study measures its accuracy effects, not realized 4-bit memory savings. Experiments ran on A100 GPUs; on-device latency and energy benchmarking remain future work. Architecture comparisons are also influenced by different pretraining data and recipes.",
+        "imagePath": "/data/vlm_on_edge_devices/clip-compression-pipeline.png",
         "type": "project",
         "category": "ai",
         "papers": [
-            "/data/vlm_on_edge_devices/Project Abstract_Nitish_Devrani-1.pdf"
+            "/data/vlm_on_edge_devices/MMFM_course_Final_Project_Paper.pdf"
         ],
         "featured": true,
         "order": 1,
-        "cover": "/data/vlm_on_edge_devices/cover-1.png",
-        "lead": "Optimize vision-language models to run efficiently on resource-constrained edge hardware.",
+        "cover": "/data/vlm_on_edge_devices/clip-compression-pipeline.png",
+        "lead": "300+ experiments exploring how far CLIP-family models can be pruned and quantized while preserving zero-shot accuracy.",
         "cardTags": [
-            "Research",
+            "Model Compression",
             "Python · PyTorch"
         ],
-        "cardBlurb": "2- and 4-bit quantization of CLIP ViT-B/32 (577 MB FP32 baseline) — PTQ, QAT, GPTQ/AWQ — with a roadmap toward Qwen-VL and LLaVA.",
+        "cardBlurb": "Wanda pruning, 4-bit quantization and pipeline ordering across three CLIP models — mapping accuracy, sparsity and the limits of compression.",
         "meta": [
             {
-                "k": "Field",
-                "v": "Computer Vision"
+                "k": "Study",
+                "v": "300+ experiments · 3 CLIP architectures"
             },
             {
-                "k": "Baseline",
-                "v": "CLIP ViT-B/32 · 577 MB FP32"
+                "k": "Evaluation",
+                "v": "CIFAR-10 · CIFAR-100 · STL-10 · ImageNette"
             },
             {
-                "k": "Zero-shot",
-                "v": "86.16% on CIFAR-10"
+                "k": "ImageNette",
+                "v": "99.62% · MobileCLIP-S1 · Wanda 30% + simulated 4-bit"
             }
         ],
         "techStack": [
             "Python",
             "PyTorch",
-            "CLIP",
-            "GPTQ / AWQ"
+            "OpenCLIP",
+            "Wanda pruning",
+            "Group-128 quantization",
+            "NVIDIA A100"
         ],
         "paperNames": [
-            "Project Abstract — VLM on Edge Devices"
+            "Full paper — How Far Can You Compress CLIP?"
+        ],
+        "cardTitle": "How Far Can You Compress CLIP?",
+        "tasks": [
+            "Designed and ran the compression study, including pipeline ordering, 30–70% sparsity sweeps and three-seed variance analysis.",
+            "Implemented activation collection for Wanda calibration using 128 images and 20 text prompts, alongside magnitude, structured FFN and EViT pruning experiments.",
+            "Found a 1.39 percentage-point advantage on CIFAR-100 for pruning ViT-B/16 before quantization; ordering differences for MobileCLIP-S1 were within noise.",
+            "Validated MobileCLIP-S1 on ImageNette: 99.62% top-1 accuracy with Wanda 30% and simulated 4-bit group-128, compared with 99.67% at FP32.",
+            "Distinguished simulated low-bit accuracy from packed storage: unstructured pruning creates sparsity but does not shrink dense model files."
         ]
     },
     {
@@ -140,31 +221,66 @@
     },
     {
         "id": "german_university_learning_review",
-        "title": "German University Learning Review WebApp",
-        "skill": "Web Development",
-        "language": "React / Node.js",
-        "objective": "Architect and deliver an end-to-end learning review platform across frontend, backend, database, and cloud deployment.",
-        "description": "Owned complete architecture and development of the learning review web app, including frontend, backend, database design, cloud deployment, production maintenance, and feature expansion for new stakeholder demands.",
-        "imagePath": "/images/projects/german-university-learning-review/cover.png",
+        "title": "Learning Companion App",
+        "skill": "AI-Assisted Education",
+        "language": "React / TypeScript / Node.js",
+        "objective": "Help teachers reflect on lessons, review assessments and develop teaching ideas with AI feedback.",
+        "description": "An end-to-end web application for lesson reflection and AI-assisted teaching, built around Digitales Didaktisches Design (DDD). Teachers can describe and rate a lesson, save a draft, review assessment scores and ask AI follow-up questions. The dashboard brings completed assessments and work in progress together across five dimensions: learning goals, learning activities, assessment and feedback, social learning, and digital technologies. A separate AI group chat helps teachers explore lesson ideas through three perspectives: idea generation, constructive critique and synthesis, with saved conversations available to revisit. The React and TypeScript interface connects to a Node.js and Express server, which manages access and integrates MongoDB for users, lessons and chats, AcademicCloud for AI feedback, and Nodemailer / SMTP for account and support emails.",
+        "imagePath": "/data/learning-companion/dashboard-overview.png",
         "type": "project",
         "category": "web_development",
         "galleryImages": [
-            "/images/projects/german-university-learning-review/cover.png"
+            "/data/learning-companion/technology-flow.png",
+            "/data/learning-companion/functional-flow.png",
+            "/data/learning-companion/dashboard-overview.png",
+            "/data/learning-companion/didactic-design.png",
+            "/data/learning-companion/ai-group-chat.png"
         ],
         "url": "http://138.246.235.231:5000/",
         "techStack": [
             "React",
-            "MongoDB",
-            "JavaScript",
+            "TypeScript",
+            "Vite",
             "Node.js",
-            "Express"
+            "Express",
+            "MongoDB",
+            "AcademicCloud",
+            "Nodemailer / SMTP"
         ],
         "tasks": [
-            "Architected the complete web application structure end-to-end.",
-            "Developed frontend, backend, database, and cloud deployment pipeline.",
-            "Maintained production and delivered new features based on evolving requirements."
+            "Architected and developed the frontend, backend, database and cloud deployment, with ongoing production maintenance.",
+            "Built lesson assessment workflows with drafts, results and AI feedback, supported by a dashboard for completed and ongoing assessments.",
+            "Integrated AI group conversations with idea-generation, critique and synthesis perspectives, follow-up exchanges and saved chats.",
+            "Implemented registration, email confirmation and role-based workflows for teachers, administrators and super administrators.",
+            "Provided administration tools for user access, test assessments, AI instructions, health checks and logs; super administrators can assign admin roles and review test assessments."
         ],
-        "papers": []
+        "papers": [],
+        "cardTitle": "Learning Companion App",
+        "lead": "A workspace for lesson reflection, structured assessments and conversations with AI teaching perspectives.",
+        "cover": "/data/learning-companion/dashboard-overview.png",
+        "cardBlurb": "Lesson assessments, visual feedback and AI group discussions — a teaching companion built with React, TypeScript and AcademicCloud.",
+        "cardTags": [
+            "Education · AI",
+            "Full-stack Development"
+        ],
+        "meta": [
+            {
+                "k": "Purpose",
+                "v": "Lesson reflection and AI-assisted teaching"
+            },
+            {
+                "k": "Role",
+                "v": "End-to-end architecture and development"
+            },
+            {
+                "k": "Framework",
+                "v": "Digitales Didaktisches Design · 5 dimensions"
+            },
+            {
+                "k": "AI integration",
+                "v": "AcademicCloud · Feedback and group chat"
+            }
+        ]
     },
     {
         "id": "petco_website",
@@ -272,9 +388,9 @@
         "title": "Stream Data Pipeline Dashboard",
         "skill": "Real-Time Analytics",
         "language": "Next.js / Kafka / WebSockets",
-        "objective": "Build a real-time dashboard that streams and visualizes Kafka topic data using WebSocket updates.",
-        "description": "Developed a real-time streaming dashboard that connects Kafka-processed data to a Next.js frontend over WebSockets. The system provides live query metrics, user-specific insights, and alerting-oriented visualization for continuous monitoring.",
-        "imagePath": "/images/projects/stream-pipeline/cover.png",
+        "objective": "Visualize streaming query metrics, predictions, threshold alerts and user billing in a live Next.js dashboard.",
+        "description": "Built the real-time Next.js dashboard for Team Stream Dreamers, connecting Kafka-backed query data to the frontend through WebSockets. The team system stores raw data in DuckDB and processes, aggregates and enriches query records for streaming. My primary responsibility was the dashboard: Recharts visualizations for query execution trends, query-type distributions and cluster utilization, alongside per-user resource costs and serverless usage. The interface compares live query counts with predictions, displays threshold alerts and provides access to alert history. To keep frequent updates manageable, charts retain the latest 10 data points, prediction batches are appended every 10 updates, and WebSocket reconnect logic handles connection drops. Improved prediction models, theme switching and support for multiple Kafka topics are described as future enhancements in the report.",
+        "imagePath": "/data/stream-pipeline/stream-pipeline.png",
         "type": "project",
         "category": "web_development",
         "galleryImages": [
@@ -286,46 +402,120 @@
         "url": "https://github.com/Nitishdevrani/Realtime_DataPipeline_Dashboard",
         "techStack": [
             "Next.js",
-            "Kafka",
+            "React",
+            "Recharts",
             "WebSockets",
-            "Node.js",
-            "Docker"
+            "Kafka",
+            "DuckDB"
         ],
         "tasks": [
-            "Built the real-time frontend dashboard for streaming data visualization.",
-            "Integrated Kafka-backed data flow with WebSocket-based live updates.",
-            "Implemented monitoring features including query insights and alert-centric metrics."
+            "Designed and implemented the real-time Next.js dashboard for Team Stream Dreamers.",
+            "Integrated Recharts line and stacked bar charts for query trends, query types and cluster utilization.",
+            "Displayed per-user execution costs and serverless usage in billing summaries.",
+            "Implemented dynamic threshold alerts that disappear after 5 seconds, with a dropdown for historical alerts.",
+            "Limited charts to the latest 10 data points and buffered predictions for insertion every 10 updates.",
+            "Added WebSocket reconnect logic to recover from connection drops during frequent updates."
         ],
-        "papers": [],
+        "papers": [
+            "/data/stream-pipeline/DE_Individual_Report.pdf"
+        ],
         "featured": true,
         "order": 3,
-        "cardTitle": "Stream Pipeline Dashboard",
-        "cover": "/images/projects/stream-pipeline/cover.png",
-        "lead": "A real-time dashboard that streams and visualizes Kafka topic data using WebSocket updates.",
+        "cardTitle": "Real-Time Data Monitoring Dashboard",
+        "cover": "/data/stream-pipeline/stream-pipeline.png",
+        "lead": "Live query analytics, predictions, alerts and user billing — streamed from Kafka to a Next.js dashboard over WebSockets.",
         "cardTags": [
-            "Real-time · Kafka"
+            "Real-Time Analytics",
+            "Next.js · WebSockets"
         ],
-        "cardBlurb": "Kafka-processed data streamed to a Next.js dashboard over WebSockets — live query metrics, per-user insights and alerts.",
+        "cardBlurb": "A live Next.js dashboard for Kafka query metrics, prediction trends, threshold alerts and per-user billing.",
         "meta": [
             {
-                "k": "Field",
-                "v": "Real-Time Analytics"
+                "k": "Team",
+                "v": "Stream Dreamers"
             },
             {
-                "k": "Transport",
-                "v": "Kafka → WebSockets"
+                "k": "My role",
+                "v": "Next.js dashboard design and implementation"
+            },
+            {
+                "k": "Data flow",
+                "v": "DuckDB · Processing / Kafka · WebSockets"
+            },
+            {
+                "k": "Visualizations",
+                "v": "Query metrics · Predictions · Alerts · Billing"
             }
         ],
-        "urlLabel": "View on GitHub"
+        "urlLabel": "View on GitHub",
+        "paperNames": [
+            "Final Project: Individual Report — Nitish Devrani"
+        ]
     },
     {
         "id": "3d_models",
+        "subprojects": [
+            {
+                "title": "Spoon Drainer",
+                "description": "From CAD model to 3D-printed object: a spoon drainer shown in its digital and physical forms.",
+                "videos": [
+                    {
+                        "src": "/assets/3D/Spone-drainer-cad.mp4",
+                        "caption": "CAD design"
+                    },
+                    {
+                        "src": "/assets/3D/Spone-drainer-printed.mp4",
+                        "caption": "3D-printed result"
+                    }
+                ]
+            },
+            {
+                "title": "Custom Letter",
+                "description": "A custom letter design showcased in four videos.",
+                "videos": [
+                    {
+                        "src": "/assets/3D/Custom-Letter-1.mp4",
+                        "caption": "Custom Letter · View 1"
+                    },
+                    {
+                        "src": "/assets/3D/Custom-Letter-2.mp4",
+                        "caption": "Custom Letter · View 2"
+                    },
+                    {
+                        "src": "/assets/3D/Custom-Letter-3.mp4",
+                        "caption": "Custom Letter · View 3"
+                    },
+                    {
+                        "src": "/assets/3D/Custom-Letter-4.mp4",
+                        "caption": "Custom Letter · View 4"
+                    }
+                ]
+            },
+            {
+                "title": "Toilet-Seat Opener",
+                "description": "A toilet-seat opener design showcased in three videos.",
+                "videos": [
+                    {
+                        "src": "/assets/3D/Seat-Lifter-1.mp4",
+                        "caption": "Toilet-Seat Opener · View 1"
+                    },
+                    {
+                        "src": "/assets/3D/Seat-Lifter-2.mp4",
+                        "caption": "Toilet-Seat Opener · View 2"
+                    },
+                    {
+                        "src": "/assets/3D/Seat-Lifter-3.mp4",
+                        "caption": "Toilet-Seat Opener · View 3"
+                    }
+                ]
+            }
+        ],
         "title": "3D Modeling & Printing",
         "skill": "3D Design",
         "language": "CAD",
         "objective": "Designing complex mechanical parts and aesthetic models for 3D printing.",
-        "description": "A collection of CAD-designed parts created for FDM 3D printing. The models range from practical household items (brush holders, wiper fixes, hinges, screws) to fun recreational objects (frisbee, toy dryer). Each design was modeled in Onshape, exported as STL, optimized for print orientation and support structures, and manufactured on a consumer 3D printer.",
-        "imagePath": "/data/3d_models/cover.png",
+        "description": "A collection of CAD-designed parts created for FDM 3D printing. The models range from practical household items (brush holders, wiper fixes, hinges, screws) to fun recreational objects (frisbee, toy dryer), plus the Smart Bike Light enclosures, caps and bicycle mounts. Each design was modeled in Onshape, exported as STL, optimized for print orientation and support structures, and manufactured on a consumer 3D printer.",
+        "imagePath": "/assets/3d.jpg",
         "type": "3d_model",
         "category": "3d_designing",
         "papers": [],

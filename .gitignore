@@ -29,3 +29,6 @@ server/.env
 # Generated from scripts/sync-public-data.mjs
 public/data/
 .vite
+
+# Full-resolution video backups; web copies live in public/assets
+original-assets/

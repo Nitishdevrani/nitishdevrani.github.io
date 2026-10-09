@@ -1,46 +1,146 @@
 [
     {
-        "id": "pub_vlm",
-        "title": "Project Abstract: VLM on Edge Devices",
-        "topic": "Edge Computing",
-        "pdfPath": "/data/vlm_on_edge_devices/Project Abstract_Nitish_Devrani-1.pdf",
-        "coverPath": "/data/vlm_on_edge_devices/card.png",
+        "id": "pub_smart_bike_light",
+        "title": "Perception for Smart Bike Lights: Real-Time Embedded Bike Headlight Control Using a Single-Model Convolutional Neural Network",
+        "topic": "Embedded Vision / Smart Bike Light",
+        "pdfPath": "/data/smart-bike-light-project/smart_bike_lights_report.pdf",
+        "pdfName": "Perception for Smart Bike Lights — Full report",
+        "coverPath": "/data/smart-bike-light-project/paper-enclosure.png",
+        "author": "Sagnik Das, Muhid Abid Siddiqui and Nitish Devrani",
+        "lead": "A lightweight CNN for real-time bicycle headlight control on a Raspberry Pi.",
+        "about": "This report presents a vision-based adaptive bicycle headlight that predicts off, dim or high beam from a forward-facing camera stream. A lightweight residual CNN combines illumination and vehicle-proximity cues, using policy-derived BDD100K labels for training and a Raspberry Pi for GPIO-driven headlight control. The reported 93.99% classification accuracy measures agreement with the derived labeling policy, rather than real-world glare safety.",
+        "documents": [
+            {
+                "name": "Perception for Smart Bike Lights — Full report",
+                "src": "/data/smart-bike-light-project/smart_bike_lights_report.pdf"
+            },
+            {
+                "name": "Perception for Smart Bike Lights — Project poster",
+                "src": "/data/smart-bike-light-project/Poster- Smart Bike Light.pdf"
+            }
+        ]
+    },
+    {
+        "id": "pub_cloud_economics",
+        "title": "Cloud Economics: Cloud Specs (A WebApp with RAG-Powered Chatbot)",
+        "topic": "Cloud Economics / RAG",
+        "pdfPath": "/data/cloud_economics/Nitish_Report.pdf",
+        "pdfName": "Cloud Economics: Cloud Specs — Full report",
+        "coverPath": "/images/projects/cloud-economics/cover.png",
         "author": "Nitish Devrani",
-        "lead": "The abstract behind the edge-quantization project — scope, baseline and roadmap.",
-        "about": "Project abstract for deploying vision-language models on resource-constrained edge hardware through ultra-low-bit quantization, from a CLIP baseline toward Qwen-VL and LLaVA.",
-        "pdfName": "Project Abstract_Nitish_Devrani.pdf"
+        "lead": "A multi-cloud advisory platform for comparing compute instances, answering pricing questions and building infrastructure bundles.",
+        "about": "This report describes Cloud Specs, a React-based platform for comparing AWS, Azure and GCP compute instances. It combines a filtered, weighted recommendation engine with a RAG-powered pricing assistant and a conversational infrastructure shopping agent. The retrieval pipeline uses the Arcana vector-database service and Qwen embeddings, while language models hosted on Academic Cloud support the assistant. The report focuses on the interactive platform and its use of collected cloud-pricing data.",
+        "documents": [
+            {
+                "name": "Cloud Economics: Cloud Specs — Full report",
+                "src": "/data/cloud_economics/Nitish_Report.pdf"
+            },
+            {
+                "name": "Cloud Economics — Presentation",
+                "src": "/data/cloud_economics/Cloud_Economics_PPT.pdf"
+            }
+        ]
+    },
+    {
+        "id": "pub_vlm",
+        "title": "How Far Can You Compress CLIP? A Systematic Study of Pruning and Quantization for Edge Deployment",
+        "topic": "Model Compression",
+        "pdfPath": "/data/vlm_on_edge_devices/MMFM_course_Final_Project_Paper.pdf",
+        "coverPath": "/data/vlm_on_edge_devices/clip-compression-pipeline.png",
+        "author": "Nitish Devrani",
+        "lead": "A systematic study of pruning, quantization and their ordering in CLIP-family models.",
+        "about": "The full course project paper reports 300+ experiments across CLIP ViT-B/32, ViT-B/16 and MobileCLIP-S1, comparing zero-shot accuracy under pruning and quantization. It includes sparsity sweeps, three-seed variance analysis and ImageNette validation, with explicit distinctions between simulated low-bit quantization, realistic storage estimates and actual edge deployment.",
+        "pdfName": "How Far Can You Compress CLIP? — Full paper"
     },
     {
         "id": "pub_multimodal_foundation",
-        "title": "Multimodal Foundation Models",
-        "topic": "Core AI",
+        "title": "A Memory-Augmented LLM Agent for Open-Ended Navigation in MiniGrid",
+        "topic": "LLM Agents",
         "pdfPath": "/data/AI agent/Mulimodal_foundation_models.pdf",
-        "coverPath": "/data/AI agent/card.png",
-        "author": "Nitish Devrani",
-        "lead": "How foundation models learn from text and images together.",
-        "about": "A report on multimodal foundation models, written alongside the Multimodal AI Agent project.",
-        "pdfName": "Multimodal_foundation_models.pdf"
+        "coverPath": "/data/AI agent/minigrid-agent-pipeline.png",
+        "author": "Vegim Bytyqi, Nitish Devrani and Pawan Saxena",
+        "lead": "Grounding an LLM navigation policy in persistent spatial memory, a local symbolic map and structured prompts.",
+        "about": "A February 2026 paper on a memory-augmented gpt-4.1-mini agent for BabyAI/MiniGrid. The architecture combines textual observation encoding, persistent spatial memory, a local symbolic map, subgoal prompting and action validation. Sample runs illustrate successful navigation and object interaction alongside residual policy looping and episode-to-episode variance.",
+        "pdfName": "A Memory-Augmented LLM Agent — Full paper"
     },
     {
         "id": "pub_ai_ethics_2",
-        "title": "Bias in AI",
+        "title": "Bias in AI: On Cultural Bias in Large Language Models",
         "topic": "AI Ethics",
-        "pdfPath": "/data/ai_ethics/bais_in_ai.pdf",
-        "coverPath": "/data/ai_ethics/bias_cover.png",
-        "author": "Nitish Devrani",
-        "lead": "Where bias enters AI systems, and what it costs.",
-        "about": "An essay on bias in AI systems.",
-        "pdfName": "Bias_in_AI.pdf"
+        "pdfPath": "/data/ai_ethics/cultural-bias-in-llms-report.pdf",
+        "coverPath": "/data/ai_ethics/cultural-bias-pipeline.png",
+        "author": "Nitish Devrani, Omar Nabail and Amr Reyad",
+        "lead": "A small-scale study of culturally grounded LLM responses and the agreement between automated judges and human annotators.",
+        "about": "Using 30 culturally grounded cloze-style prompts and 330 response items, this study examines Arabic cultural context across ChatGPT-5.2, Claude Sonnet-4.5, Qwen3-Max, DeepSeek-V3.2 and Gemini-3. The prompt set draws on CAMeL examples translated into English and additional prompts. Access conditions include Germany versus a U.S. VPN, plus ChatGPT pro and non-pro accounts. Five blinded LLM judges assign bias labels by majority vote, with a human sanity check involving nine Arabic-culture-knowledgeable annotators on responses to eight prompts. Observed bias rates range from 6.7% to 30.0%. Individual agreement is low among both human annotators (Fleiss’ κ = 0.117) and LLM judges (κ = 0.112), while human-majority and LLM-majority labels agree on 82.3% of the 62 overlapping items (Cohen’s κ = 0.592). Account-tier, location and exploratory between-model comparisons were not statistically significant in this small sample. The findings highlight culturally mismatched completions and the subjectivity of bias labeling, rather than establishing a reliable model ranking.",
+        "pdfName": "On Cultural Bias in Large Language Models — Experiment report",
+        "documents": [
+            {
+                "name": "On Cultural Bias in Large Language Models — Experiment report",
+                "src": "/data/ai_ethics/cultural-bias-in-llms-report.pdf"
+            },
+            {
+                "name": "Bias in AI — Presentation",
+                "src": "/data/ai_ethics/bais_in_ai.pdf"
+            }
+        ],
+        "meta": [
+            {
+                "k": "Study size",
+                "v": "30 prompts · 330 responses · 5 model families"
+            },
+            {
+                "k": "Evaluation",
+                "v": "5 LLM judges · 9 human annotators"
+            },
+            {
+                "k": "Human–LLM overlap",
+                "v": "82.3% agreement · 62 items"
+            }
+        ],
+        "tasks": [
+            "Wrote the abstract and introduction, covering motivation, related work, experimental setup and ethical considerations.",
+            "Designed and conducted the human evaluation using a Google Form with culturally grounded prompts and anonymized model outputs."
+        ]
     },
     {
         "id": "pub_ai_ethics_1",
-        "title": "Philosophy in AI",
-        "topic": "AI Ethics",
-        "pdfPath": "/data/ai_ethics/Philoshopy_in_ai.pdf",
-        "coverPath": "/data/ai_ethics/philosophy_cover.png",
+        "title": "A Perfectly Frictionless Companion Is a Perfectly Stunted One: On Sycophantic AI and the Eclipse of Moral Selfhood",
+        "topic": "AI Ethics / Philosophy",
+        "pdfPath": "/data/ai_ethics/Nitish_Devrani_Essay_Ethics.pdf",
+        "coverPath": "/data/ai_ethics/philosophy-argument.png",
         "author": "Nitish Devrani",
-        "lead": "The philosophical questions underneath intelligent machines.",
-        "about": "An essay on philosophy in AI.",
-        "pdfName": "Philosophy_in_AI.pdf"
+        "lead": "A philosophical examination of AI companionship, moral autonomy and the difference between satisfaction and human flourishing.",
+        "about": "This essay examines a hypothetical AI companion designed to affirm every opinion and remove disagreement from the user’s relationships. Its Developmental Deprivation Argument holds that moral growth requires challenge, while a fully sycophantic companion removes those conditions. Drawing on Aristotelian virtue ethics, Kantian autonomy and liberal perfectionism, the essay argues that persistent affirmation can undermine practical wisdom and moral selfhood. It considers a consequentialist defence grounded in wellbeing and freely chosen companionship, then responds by questioning how the system shapes preferences and whether subjective satisfaction is sufficient for flourishing. A closing meta-ethical reflection defends a broadly realist position while acknowledging that its assumptions about autonomy, challenge and objective wellbeing remain open to scrutiny. This is a normative philosophical argument, rather than an empirical study of AI users.",
+        "pdfName": "On Sycophantic AI and the Eclipse of Moral Selfhood — Full essay",
+        "documents": [
+            {
+                "name": "On Sycophantic AI and the Eclipse of Moral Selfhood — Full essay",
+                "src": "/data/ai_ethics/Nitish_Devrani_Essay_Ethics.pdf"
+            },
+            {
+                "name": "Philosophy in AI — Presentation",
+                "src": "/data/ai_ethics/Philoshopy_in_ai.pdf"
+            }
+        ],
+        "meta": [
+            {
+                "k": "Form",
+                "v": "Philosophical essay · Normative ethics and meta-ethics"
+            },
+            {
+                "k": "Central argument",
+                "v": "Developmental Deprivation Argument"
+            },
+            {
+                "k": "Traditions",
+                "v": "Virtue ethics · Kantian ethics · Liberal perfectionism"
+            }
+        ],
+        "tasks": [
+            "Distinguished preference satisfaction from human flourishing in the design of AI companions.",
+            "Formulated and defended the Developmental Deprivation Argument using two premises and a normative conclusion.",
+            "Examined the strongest autonomy-based and consequentialist objection, including the risk of imposing a particular account of the good life.",
+            "Reflected on moral realism and the limits of the argument’s philosophical commitments."
+        ]
     }
 ]
