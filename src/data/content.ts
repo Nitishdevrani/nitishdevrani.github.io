@@ -9,6 +9,15 @@ export type Subproject = {
   videos: { src: string; caption: string }[];
 };
 
+export type ProjectStory = {
+  title: string;
+  intro: string;
+  behaviors: string[];
+  summary: string;
+  sections: { title: string; paragraphs: string[] }[];
+  team: { name: string; url: string }[];
+};
+
 export type Project = {
   id: string;
   title: string;
@@ -29,6 +38,7 @@ export type Project = {
   tasks?: string[];
   galleryImages?: string[];
   imageStream?: boolean;
+  story?: ProjectStory;
   papers?: string[];
   paperNames?: string[];
   models?: string[];
@@ -83,6 +93,7 @@ export type DetailItem = {
   tasks: string[];
   gallery: string[];
   imageStream?: boolean;
+  story?: ProjectStory;
   subprojects: Subproject[];
   models: { name: string; src: string; fileName: string }[];
   docsTitle: string;
@@ -139,8 +150,9 @@ const projectDetail = (p: Project): DetailItem => {
     meta: p.meta ?? [],
     stack: p.techStack ?? [],
     tasks: p.tasks ?? [],
-    gallery: (p.galleryImages ?? []).filter((src) => p.imageStream || src !== cover),
+    gallery: (p.galleryImages ?? []).filter((src) => p.imageStream || p.id === 'smart_bike_light' || src !== cover),
     imageStream: p.imageStream,
+    story: p.story,
     subprojects: p.subprojects ?? [],
     models: modelProjects.flatMap(project => project.modelsBasePath ? (project.models ?? []).map(name => ({
       name: `${project.id !== p.id ? `${project.title} · ` : ''}${name.replace(/\.stl$/i, '').replace(/-/g, ' ')}`,

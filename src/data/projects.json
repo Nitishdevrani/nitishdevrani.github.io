@@ -63,12 +63,55 @@
     },
     {
         "id": "smart_bike_light",
+        "story": {
+            "title": "12 months from prototype to the road",
+            "intro": "After 12 months of building, testing, and riding through a harsh winter, our Smart Bicycle Light is real.",
+            "behaviors": [
+                "Stays off during daylight.",
+                "Activates automatically at night.",
+                "Switches between low and high beam based on oncoming traffic detection."
+            ],
+            "summary": "No switches. No manual adjustments. Just intelligent, adaptive lighting.",
+            "sections": [
+                {
+                    "title": "How we built it",
+                    "paragraphs": [
+                        "The full pipeline: ESP32 camera → Raspberry Pi with on-device neural network inference → circuit controller → headlight. Compact, self-contained, and battery-powered.",
+                        "We couldn’t find a suitable bicycle dataset online, so we built our own — starting with a phone mounted to a bike, then moving to the ESP32 camera as our final vision module.",
+                        "To make the system mountable and weather-resistant, we designed and 3D printed custom enclosures and bike fittings from scratch."
+                    ]
+                },
+                {
+                    "title": "Tested through a harsh winter",
+                    "paragraphs": [
+                        "We rode through snow, rain, and freezing conditions. The system held up — a meaningful milestone for embedded electronics on a moving bicycle in extreme weather.",
+                        "Is it perfect? Not yet. But it works, it’s robust, and it’s ours."
+                    ]
+                },
+                {
+                    "title": "What I learned",
+                    "paragraphs": [
+                        "This project sharpened my skills across the full stack of AI engineering: data collection, model development, edge deployment, and hardware design. It gave me a clear picture of what building real AI products actually looks like."
+                    ]
+                }
+            ],
+            "team": [
+                {
+                    "name": "Muhid Abid",
+                    "url": "https://www.linkedin.com/in/muhidabid/"
+                },
+                {
+                    "name": "Sagnik Das",
+                    "url": "https://www.linkedin.com/in/sagnik-das/"
+                }
+            ]
+        },
         "title": "Smart Bike Light Pro",
         "skill": "Embedded Vision / Edge AI",
         "language": "CNN / Raspberry Pi / ESP32",
         "objective": "Control bicycle headlight beam states from a forward-facing camera using a lightweight neural network.",
         "description": "Developed at UTN with Sagnik Das and Muhid Abid Siddiqui, in collaboration with Supernova GmbH, Smart Bike Light Pro is a vision-based adaptive headlight prototype. An ESP32-CAM streams MJPEG video over Wi-Fi to a Raspberry Pi 5. A lightweight residual CNN predicts off, dim or high beam, and temporal stabilization smooths transitions before GPIO-driven relay control switches the headlight. The model uses policy-derived BDD100K labels based on time of day and hazard bounding boxes. Custom 3D-printed enclosures and bicycle mounts integrate the hardware for on-bike testing. The report records 93.99% classification accuracy on 18,482 BDD100K test images and 20.4 ms model inference on Raspberry Pi 5, with a 10 Hz control loop. The classification result measures agreement with derived labels, not real-world glare safety. On 255 bike-ride segments, the deployment configuration reports 80.8% dimming recall and a 30.6% false-positive rate; twilight, distant hazards and some single-headlight vehicles remain challenging.",
-        "imagePath": "/data/smart-bike-light-project/paper-enclosure.png",
+        "imagePath": "/data/smart-bike-light-project/smart-bicycle-light-01.webp",
         "type": "project",
         "category": "ai",
         "papers": [
@@ -87,7 +130,7 @@
             "Part Studio 1.stl"
         ],
         "modelsBasePath": "/data/smart-bike-light-project/3d-models",
-        "cover": "/data/smart-bike-light-project/paper-enclosure.png",
+        "cover": "/data/smart-bike-light-project/smart-bicycle-light-01.webp",
         "lead": "Camera-based adaptive headlight control — a lightweight CNN, Raspberry Pi inference and custom bicycle-mounted hardware.",
         "cardTitle": "Smart Bike Light Pro",
         "cardBlurb": "A camera-to-headlight pipeline that predicts off, dim and high beam on Raspberry Pi 5, housed in custom 3D-printed enclosures.",
@@ -135,6 +178,19 @@
             "Compared model variants and evaluated classification, embedded inference and dimming behavior on recorded bike-ride segments."
         ],
         "galleryImages": [
+            "/data/smart-bike-light-project/smart-bicycle-light-01.webp",
+            "/data/smart-bike-light-project/smart-bicycle-light-02.webp",
+            "/data/smart-bike-light-project/smart-bicycle-light-03.webp",
+            "/data/smart-bike-light-project/smart-bicycle-light-04.webp",
+            "/data/smart-bike-light-project/smart-bicycle-light-05.webp",
+            "/data/smart-bike-light-project/smart-bicycle-light-06.webp",
+            "/data/smart-bike-light-project/smart-bicycle-light-07.webp",
+            "/data/smart-bike-light-project/smart-bicycle-light-08.webp",
+            "/data/smart-bike-light-project/smart-bicycle-light-09.webp",
+            "/data/smart-bike-light-project/smart-bicycle-light-10.webp",
+            "/data/smart-bike-light-project/smart-bicycle-light-11.webp",
+            "/data/smart-bike-light-project/smart-bicycle-light-12.webp",
+            "/data/smart-bike-light-project/smart-bicycle-light-13.webp",
             "/data/smart-bike-light-project/paper-wiring.png",
             "/data/smart-bike-light-project/Box_printed.jpeg",
             "/data/smart-bike-light-project/Box_installed.jpeg"
