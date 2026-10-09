@@ -1,5 +1,125 @@
 [
     {
+        "id": "orena_focus",
+        "title": "ORena FOCUS Procedure Challenge",
+        "cardTitle": "ORena FOCUS — Surgical Video Understanding",
+        "category": "ai",
+        "updatedAt": "2026-10-04",
+        "skill": "Surgical AI",
+        "language": "Vision-Language Models",
+        "type": "project",
+        "objective": "Explore vision-language models for surgical video understanding through the ORena FOCUS Procedure Challenge.",
+        "lead": "4th globally at MICCAI 2026, with the Model Efficiency Award for the fastest inference among all participating teams.",
+        "cardBlurb": "Ranked 4th globally at MICCAI 2026 and won the Model Efficiency Award, representing UTN’s Fundamental AI Lab.",
+        "description": "Representing UTN’s Fundamental AI Lab, I ranked 4th globally in the ORena FOCUS Procedure Challenge at MICCAI 2026 and received the Model Efficiency Award for the fastest inference time among all participating teams, including the Top 3. Closely connected to my Master’s thesis on vision-language models for surgical video understanding, the challenge motivated continuous experimentation and model optimization. This was my first global research challenge and major conference, where I also presented my approach. Prof. Yuki Asano and Jona Ruthardt provided academic guidance and support.",
+        "cardTags": [
+            "Surgical AI",
+            "Vision-Language Models",
+            "MICCAI 2026",
+            "Model Efficiency"
+        ],
+        "meta": [
+            {
+                "k": "Result",
+                "v": "4th place globally"
+            },
+            {
+                "k": "Award",
+                "v": "Model Efficiency Award · Fastest inference across all teams"
+            },
+            {
+                "k": "Event",
+                "v": "ORena FOCUS Procedure Challenge · MICCAI 2026"
+            },
+            {
+                "k": "Affiliation",
+                "v": "UTN · Fundamental AI Lab"
+            },
+            {
+                "k": "Research context",
+                "v": "Master’s thesis · Surgical video understanding"
+            }
+        ],
+        "techStack": [
+            "Vision-Language Models",
+            "Surgical Video Understanding",
+            "Model Efficiency"
+        ],
+        "tasks": [
+            "Developed and refined an approach to surgical video understanding linked to my Master’s thesis.",
+            "Experimented and optimized the model throughout the leaderboard challenge.",
+            "Achieved the fastest inference time among all participating teams while placing 4th overall.",
+            "Presented my approach at the challenge event."
+        ],
+        "imagePath": "/data/orena_focus/miccai-award-portrait.jpg",
+        "galleryImages": [
+            "/data/orena_focus/orena-efficiency-award.jpg",
+            "/data/orena_focus/miccai-conference-badge.jpg",
+            "/data/orena_focus/miccai-conference-venue.jpg"
+        ],
+        "papers": [
+            "/data/orena_focus/miccai-2026-certificate.pdf"
+        ],
+        "paperNames": [
+            "MICCAI 2026 certificate"
+        ]
+    },
+    {
+        "id": "midnight_snacker",
+        "title": "The Midnight Snacker’s Guide",
+        "category": "3d_designing",
+        "updatedAt": "2026-05-20",
+        "skill": "UX / Product Design",
+        "language": "Figma",
+        "type": "project",
+        "objective": "Design a quick, low-effort mobile experience that helps late-night snackers make healthier food choices.",
+        "lead": "A winning Figma Hackathon concept for quick, healthier late-night eating, combining thoughtful UX with AI-assisted food recommendations.",
+        "cardBlurb": "Figma Hackathon winner: an AI-powered mobile app concept for healthier late-night snacks, fridge-based meal ideas and photo-based nutrition insights.",
+        "description": "I won a Figma Hackathon with The Midnight Snacker’s Guide, an AI-powered mobile experience designed for people who have little time to cook but want healthier late-night choices. The concept combines Vision AI ingredient detection from the fridge with meal recommendations based on available food, a 1–30 minute cooking-time filter, photo-based nutrition tracking and daily diet insights. An eye-friendly night mode supports late-night use. The project brought together UX thinking, accessibility and AI-assisted health recommendations under hackathon time constraints. The features describe the designed product experience.",
+        "cardTags": [
+            "UX Design",
+            "Product Design",
+            "Figma",
+            "AI",
+            "HealthTech",
+            "Accessibility"
+        ],
+        "meta": [
+            {
+                "k": "Recognition",
+                "v": "Figma Hackathon winner"
+            },
+            {
+                "k": "My role",
+                "v": "UX / Product Design"
+            },
+            {
+                "k": "Format",
+                "v": "Mobile app concept"
+            },
+            {
+                "k": "Shared",
+                "v": "May 20, 2026"
+            }
+        ],
+        "techStack": [
+            "Figma",
+            "UX Design",
+            "Product Design",
+            "Accessibility",
+            "Vision AI concept"
+        ],
+        "tasks": [
+            "Designed an eye-friendly dark / night mode for late-night use.",
+            "Designed Vision AI ingredient detection from the fridge and meal recommendations based on available food.",
+            "Added a 1–30 minute cooking-time slider for quick recipe filtering.",
+            "Designed photo-based nutrition tracking and daily insights for estimated protein, carbohydrates and meal health."
+        ],
+        "imagePath": "/data/midnight_snacker/figma.gif",
+        "galleryImages": [],
+        "papers": []
+    },
+    {
         "id": "ai_agent",
         "title": "A Memory-Augmented LLM Agent for Open-Ended Navigation in MiniGrid",
         "skill": "AI / ML",
